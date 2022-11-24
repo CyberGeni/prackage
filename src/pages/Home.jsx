@@ -22,8 +22,8 @@ function Home() {
                 <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">Prackage's innovative approach to personal branding ensures that your name shines in the right time.</p>
                 <button className="bg-blue-600 text-white rounded px-6 py-3">Get started</button>
             </section>
-            <section className="bg-gray-50 text-center px-12 py-6">
-                <p className="text-gray-500 py-6">Places our subscribers have appeared</p>
+            <section className="bg-gray-50 text-center px-12 py-10">
+                <p className="text-gray-500 pb-6">Places our subscribers have appeared</p>
                 <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 place-items-center">
                     <img className="max-w-full" src={TheGuardian} alt="" />
                     <img className="max-w-full" src={Techpoint} alt="" />
@@ -33,7 +33,7 @@ function Home() {
                     <img className="max-w-full" src={Pulse} alt="" />
                 </div>
             </section>
-            <section className="bg-blue-50 p-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+            <section className="bg-blue-50 px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
                 <img className="mx-auto md:w-full" src={SectionOneImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Heavy on the “personal”</h1>
@@ -42,7 +42,7 @@ function Home() {
                     <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6">Learn about our process</button>
                 </div>
             </section>
-            <section className="p-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+            <section className="px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
                 <img className="rounded-md mx-auto md:w-full" src={SectionTwoImg} alt="" />
                 <div className="md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Made with different personalities in mind</h1>
@@ -50,7 +50,7 @@ function Home() {
                     <button className="bg-blue-600 text-white rounded px-6 py-3">Learn about Humark</button>
                 </div>
             </section>
-            <section className="bg-orange-50 p-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+            <section className="bg-orange-50 px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
                 <img className="mx-auto md:w-full" src={SectionThreeImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Meaningful connections where and when it matters.</h1>
