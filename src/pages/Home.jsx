@@ -1,15 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div>
+    <div className="font-BrOmega">
         <Navbar />
         <main>
             <section>
-                <h1>Build power, respect into your name.</h1>
+                <h1 className="">Build power, respect into your name.</h1>
                 <p>Prackage's innovative approach to personal branding ensures that your name shines in the right time.</p>
                 <button>Get started</button>
             </section>

@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Light.eot');
+    src: local('BR Omega Light'), local('BROmega-Light'),
+        url('BROmega-Light.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Light.woff2') format('woff2'),
+        url('BROmega-Light.woff') format('woff'),
+        url('BROmega-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega Semi';
+    src: url('BROmega-SemiBoldItalic.eot');
+    src: local('BR Omega Semi Bold Italic'), local('BROmega-SemiBoldItalic'),
+        url('BROmega-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-SemiBoldItalic.woff2') format('woff2'),
+        url('BROmega-SemiBoldItalic.woff') format('woff'),
+        url('BROmega-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-MediumItalic.eot');
+    src: local('BR Omega Medium Italic'), local('BROmega-MediumItalic'),
+        url('BROmega-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-MediumItalic.woff2') format('woff2'),
+        url('BROmega-MediumItalic.woff') format('woff'),
+        url('BROmega-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-RegularItalic.eot');
+    src: local('BR Omega Italic'), local('BROmega-RegularItalic'),
+        url('BROmega-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-RegularItalic.woff2') format('woff2'),
+        url('BROmega-RegularItalic.woff') format('woff'),
+        url('BROmega-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-BoldItalic.eot');
+    src: local('BR Omega Bold Italic'), local('BROmega-BoldItalic'),
+        url('BROmega-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-BoldItalic.woff2') format('woff2'),
+        url('BROmega-BoldItalic.woff') format('woff'),
+        url('BROmega-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega Extra';
+    src: url('BROmega-ExtraLightItalic.eot');
+    src: local('BR Omega Extra Light Italic'), local('BROmega-ExtraLightItalic'),
+        url('BROmega-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-ExtraLightItalic.woff2') format('woff2'),
+        url('BROmega-ExtraLightItalic.woff') format('woff'),
+        url('BROmega-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Bold.eot');
+    src: local('BR Omega Bold'), local('BROmega-Bold'),
+        url('BROmega-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Bold.woff2') format('woff2'),
+        url('BROmega-Bold.woff') format('woff'),
+        url('BROmega-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-BlackItalic.eot');
+    src: local('BR Omega Black Italic'), local('BROmega-BlackItalic'),
+        url('BROmega-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-BlackItalic.woff2') format('woff2'),
+        url('BROmega-BlackItalic.woff') format('woff'),
+        url('BROmega-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega Extra';
+    src: url('BROmega-ExtraLight.eot');
+    src: local('BR Omega Extra Light'), local('BROmega-ExtraLight'),
+        url('BROmega-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-ExtraLight.woff2') format('woff2'),
+        url('BROmega-ExtraLight.woff') format('woff'),
+        url('BROmega-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Medium.eot');
+    src: local('BR Omega Medium'), local('BROmega-Medium'),
+        url('BROmega-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Medium.woff2') format('woff2'),
+        url('BROmega-Medium.woff') format('woff'),
+        url('BROmega-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Black.eot');
+    src: local('BR Omega Black'), local('BROmega-Black'),
+        url('BROmega-Black.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Black.woff2') format('woff2'),
+        url('BROmega-Black.woff') format('woff'),
+        url('BROmega-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-LightItalic.eot');
+    src: local('BR Omega Light Italic'), local('BROmega-LightItalic'),
+        url('BROmega-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-LightItalic.woff2') format('woff2'),
+        url('BROmega-LightItalic.woff') format('woff'),
+        url('BROmega-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Omega Semi';
+    src: url('BROmega-SemiBold.eot');
+    src: local('BR Omega Semi Bold'), local('BROmega-SemiBold'),
+        url('BROmega-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-SemiBold.woff2') format('woff2'),
+        url('BROmega-SemiBold.woff') format('woff'),
+        url('BROmega-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Regular.eot');
+    src: local('BR Omega'), local('BROmega-Regular'),
+        url('BROmega-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Regular.woff2') format('woff2'),
+        url('BROmega-Regular.woff') format('woff'),
+        url('BROmega-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-Thin.eot');
+    src: local('BR Omega Thin'), local('BROmega-Thin'),
+        url('BROmega-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-Thin.woff2') format('woff2'),
+        url('BROmega-Thin.woff') format('woff'),
+        url('BROmega-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('BROmega-ThinItalic.eot');
+    src: local('BR Omega Thin Italic'), local('BROmega-ThinItalic'),
+        url('BROmega-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('BROmega-ThinItalic.woff2') format('woff2'),
+        url('BROmega-ThinItalic.woff') format('woff'),
+        url('BROmega-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
