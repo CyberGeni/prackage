@@ -35,7 +35,7 @@ function Navbar() {
 
           <div className="flex flex-col w-auto md:space-x-3 md:pr-10 md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0">
             <button className="md:w-max">Log In</button>
-            <button className="text-xl md:text-base rounded w-max bg-blue-600 mb-0 text-white px-6 py-4 md:py-2 ">Sign Up</button>
+            <button className="text-xl md:text-base md:rounded  md:w-max w-full bg-blue-600 mb-0 text-white px-6 py-4 md:py-2 ">Sign Up</button>
           </div>
         </div>
         <img onClick={handleClick} className="px-10 py-8 md:hidden md:h-fit" src={Menu} alt="" />
