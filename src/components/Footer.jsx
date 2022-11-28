@@ -8,26 +8,26 @@ function Footer() {
             <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4">Get started</button>
         </section>
         <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-5 py-12">
-            <ul className="space-y-4">
-                <li className="text-gray-400 mb-2c text-sm">Product</li>
+            <ul className="space-y-5">
+                <li className="text-gray-400 mb-6  text-sm">Product</li>
                 <li className="text-gray-200">Blog</li>
                 <li className="text-gray-200">Solutions</li>
                 <li className="text-gray-200">Pricing</li>
             </ul>
-            <ul className="space-y-4">
-                <li className="text-gray-400 mb-2 text-sm">Company</li>
+            <ul className="space-y-5">
+                <li className="text-gray-400 mb-6 text-sm">Company</li>
                 <li className="text-gray-200">About us</li>
                 <li className="text-gray-200">Press</li>
                 <li className="text-gray-200">Contact</li>
             </ul>
-            <ul className="space-y-4">
-                <li className="text-gray-400 mb-2 text-sm">Social</li>
+            <ul className="space-y-5">
+                <li className="text-gray-400 mb-6 text-sm">Social</li>
                 <li className="text-gray-200">Twitter</li>
                 <li className="text-gray-200">LinkedIn</li>
                 <li className="text-gray-200">Facebook</li>
             </ul>
-            <ul className="space-y-4">
-                <li className="text-gray-400 mb-2 text-sm">Legal</li>
+            <ul className="space-y-5">
+                <li className="text-gray-400 mb-6 text-sm">Legal</li>
                 <li className="text-gray-200">Terms</li>
                 <li className="text-gray-200">Privacy</li>
                 <li className="text-gray-200">Contact</li>
