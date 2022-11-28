@@ -33,8 +33,8 @@ function Home() {
                     <img className="max-w-full" src={Pulse} alt="" />
                 </div>
             </section>
-            <section className="bg-blue-50 px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
-                <img className="mx-auto md:w-full" src={SectionOneImg} alt="" />
+            <section className="bg-blue-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+                <img className="mx-auto md:w-4/5" src={SectionOneImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Heavy on the “personal”</h1>
                     <p className="text-xl my-2 text-gray-600">Simply put, we treat you like a person, a very important one.</p>
@@ -42,16 +42,16 @@ function Home() {
                     <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6">Learn about our process</button>
                 </div>
             </section>
-            <section className="px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
-                <img className="rounded-md mx-auto md:w-full" src={SectionTwoImg} alt="" />
+            <section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+                <img className="rounded-md mx-auto md:w-4/5" src={SectionTwoImg} alt="" />
                 <div className="md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Made with different personalities in mind</h1>
                     <p className="text-gray-500 text-lg my-3">With our proprietary tool Humark®, we are able to build and manage your personal brand to your taste, whether you love the spotlight or you prefer to stay BTS.</p>
                     <button className="bg-blue-600 text-white rounded px-6 py-3">Learn about Humark</button>
                 </div>
             </section>
-            <section className="bg-orange-50 px-8 py-12 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
-                <img className="mx-auto md:w-full" src={SectionThreeImg} alt="" />
+            <section className="bg-orange-50 px-8 py-16 sm:px-16 md:px-20 md:grid md:grid-cols-2 md:gap-10 md:items-center">
+                <img className="mx-auto md:w-4/5" src={SectionThreeImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl my-4">Meaningful connections where and when it matters.</h1>
                     <p className="text-gray-500 text-lg">Prackage increases your presence and visibility in refreshing ways to make sure you remain top-of-mind in the minds of key people in your life.</p>
