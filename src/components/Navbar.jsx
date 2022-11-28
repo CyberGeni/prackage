@@ -20,7 +20,7 @@ function Navbar() {
             <img 
               onClick={handleClick}
               className="w-4 cursor-pointer"
-              src={Close} alt="" 
+              src={Close}
               />
           </div>
           <nav className="space-y-7 px-10">
