@@ -41,7 +41,7 @@ function Home() {
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Heavy on the “personal”</h1>
                     <p className="text-xl my-2 text-gray-600">Simply put, we treat you like a person, a very important one.</p>
-                    <p className="text-gray-500 text-lg">Prackage combines the scientific with a personal touch to drive all-round growth in you as a person because we care about how you appear outside as much as how you feel on the inside. Learn about our process</p>
+                    <p className="text-gray-500 text-lg">Prackage combines the scientific with a personal touch to drive all-round growth in you as a person because we care about how you appear outside as much as how you feel on the inside.</p>
                     <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6">Learn about our process</button>
                 </div>
             </section>
