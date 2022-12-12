@@ -31,6 +31,7 @@ function Navbar() {
             <li>Home</li>
             <li>About us</li>
             <li>Pricing</li>
+            <li>Blog</li>
           </nav>
 
           <div className="flex flex-col w-auto md:space-x-3 md:pr-16 md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0">

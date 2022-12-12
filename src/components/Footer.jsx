@@ -7,10 +7,10 @@ function Footer() {
             <p className="text-gray-200 text-lg w-1/2">Learn about our transparent pricing.</p>
             <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4">Get started</button>
         </section>
-        <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-5 py-12">
+        <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4  py-12">
             <ul className="space-y-5">
                 <li className="text-gray-400 mb-6  text-sm">Product</li>
-                <li className="text-gray-200">Blog</li>
+                <li className="text-gray-200">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1">Coming Soon</span></li>
                 <li className="text-gray-200">Solutions</li>
                 <li className="text-gray-200">Pricing</li>
             </ul>

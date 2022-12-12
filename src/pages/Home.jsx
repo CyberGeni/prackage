@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Arrow from '../assets/icons/right-arrow.svg'
 import TheGuardian from '../assets/images/theguardian.svg'
 import Techpoint from '../assets/images/techpoint.svg'
 import TVC from '../assets/images/tvc-logo.svg'
@@ -19,13 +19,13 @@ function Home() {
         <main>
             {/* hero */}
             <section className="flex flex-col w-4/5 mx-auto justify-center items-center h-[85vh] space-y-5 sm:space-y-6 md:space-y-7">
-                <h1 className="text-5xl sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Build power, respect into your <span className="decoration-underline underline underline-offset-4 decoration-blue-600">name.</span> </h1>
-                <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">Prackage's innovative approach to personal branding ensures that your name shines in the right time.</p>
+                <h1 className="text-5xl sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Get the recognition you<span className="decoration-underline underline underline-offset-4 decoration-blue-600"> deserve</span></h1>
+                <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">Our innovative approach to personal branding helps you build relevance & social capital within and outside your industry on your own terms.</p>
                 <button className="bg-blue-600 text-white rounded px-6 py-3">Get started</button>
             </section>
             {/* media worked with */}
             <section className="bg-gray-50 text-center px-12 py-10">
-                <p className="text-gray-500 pb-6">Places our subscribers have appeared</p>
+                <p className="text-gray-500 pb-6">Our subscribers have appeared on</p>
                 <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 place-items-center">
                     <img className="max-w-full" src={TheGuardian} alt="" />
                     <img className="max-w-full" src={Techpoint} alt="" />
@@ -41,8 +41,8 @@ function Home() {
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Heavy on the “personal”</h1>
                     <p className="text-xl my-2 text-gray-600">Simply put, we treat you like a person, a very important one.</p>
-                    <p className="text-gray-500 text-lg">Prackage combines the scientific with a personal touch to drive all-round growth in you as a person because we care about how you appear outside as much as how you feel on the inside.</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6">Learn about our process</button>
+                    <p className="text-gray-500 text-lg">Our membership gives you access to our pool of high-flying professionals through special introductions and members-only networking events.</p>
+                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
                 </div>
             </section>
             {/* made with diff personalities in mind */}
@@ -59,7 +59,7 @@ function Home() {
                 <img className="mx-auto md:w-full" src={SectionThreeImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Meaningful connections where and when it matters.</h1>
-                    <p className="text-gray-500 text-lg">Prackage increases your presence and visibility in refreshing ways to make sure you remain top-of-mind in the minds of key people in your life.</p>
+                    <p className="text-gray-500 text-lg">From work promotions to birthdays, Prackage increases your presence and visibility in refreshing ways to make sure you remain top-of-mind.</p>
                     <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4">Get started</button>
                 </div>
             </section>
