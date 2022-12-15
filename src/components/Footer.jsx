@@ -4,8 +4,8 @@ function Footer() {
   return (
     <footer className="bg-black px-12 py-12 sm:px-16 md:px-24 md:py-16">
         <section className="pb-12">
-            <p className="text-gray-200 text-lg w-1/2">Learn about our transparent pricing.</p>
-            <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4">Get started</button>
+            <p className="text-gray-200 text-lg w-1/2">Build your prackaged life now.</p>
+            <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4">View plans</button>
         </section>
         <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4  py-12">
             <ul className="space-y-5">

@@ -18,9 +18,9 @@ function Home() {
         <Navbar />
         <main>
             {/* hero */}
-            <section className="flex flex-col w-4/5 mx-auto justify-center items-center h-[85vh] space-y-5 sm:space-y-6 md:space-y-7">
-                <h1 className="text-5xl sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Get the recognition you <span className="decoration-underline underline underline-offset-4 decoration-blue-600">deserve</span></h1>
-                <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">Our innovative approach to personal branding helps you build relevance & social capital within and outside your industry on your own terms.</p>
+            <section className="h-screen flex flex-col bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-blue-100 via-blue-300 to-blue-500 px-[10%] mx-auto justify-center items-center space-y-5 sm:space-y-6 md:space-y-7">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Create the life you want <span className="decoration-underline underline underline-offset-4 decoration-blue-600">now.</span></h1>
+                <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">It takes an entire career to build a great personal brand, Prackage makes it easier for you to connect, grow, evolve and enjoy the process of becoming a better you.</p>
                 <button className="bg-blue-600 text-white rounded px-6 py-3">Get started</button>
             </section>
             {/* media worked with */}
@@ -40,7 +40,7 @@ function Home() {
                 <img className="mx-auto md:w-full" src={SectionOneImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Heavy on the “personal”</h1>
-                    <p className="text-gray-500 text-lg">Our membership gives you access to our pool of high-flying professionals through special introductions and members-only networking events.</p>
+                    <p className="text-gray-500 text-lg">Personal branding is more than mere self-promotion. Prackage helps you grow, establish your worth in the right settings and make introductions that open up new opportunities for you</p>
                     <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
                 </div>
             </section>
@@ -48,8 +48,8 @@ function Home() {
             <section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
                 <img className="rounded-md mx-auto md:w-full" src={SectionTwoImg} alt="" />
                 <div className="md:space-y-6">
-                    <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">Made with different personalities in mind</h1>
-                    <p className="text-gray-500 text-lg my-3">With our proprietary tool Humark®, we are able to build and manage your personal brand to your taste, whether you love the spotlight or you prefer to stay BTS.</p>
+                    <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">Show off, only when you want</h1>
+                    <p className="text-gray-500 text-lg my-3">Don't fall into the trap of "putting yourself out there just for the sake of it. Out proprietary tool Humark helps you stand out and stay relevant without losing your essence - what makes you, you."</p>
                     <button className="bg-blue-600 text-white rounded px-6 py-3">Learn about Humark</button>
                 </div>
             </section>
