@@ -12,7 +12,7 @@ import SectionOneImg from '../assets/images/show-off-only-when-you-want.svg'
 import SectionTwoImg from '../assets/images/heavy-on-the-personal.svg'
 import SectionTwoImgV2 from '../assets/images/heavy-on-the-personal-2.svg'
 import SectionThreeImg from '../assets/images/your-dream-its-valid.svg'
-
+import SectionFourImg from '../assets/images/your-brand-your-rules.svg'
 import "../App.css"
 function Home() {
   return (
@@ -62,7 +62,7 @@ function Home() {
             
             {/* your dream, it's valid */}
             <section className="bg-orange-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
-                <img className="mx-auto md:w-full" src={SectionThreeImg} alt="" />
+                <img className="rounded-md mx-auto md:w-full" src={SectionThreeImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Your dream, it's valid</h1>
                     <p className="text-gray-500 text-lg">Get the headstart to build the fulfilling life you deserve. Monetise your skills, identify new income streams, launch your business, multiply your network, get things done and more. If you can dream it, we can help you achieve it.</p>
@@ -72,9 +72,7 @@ function Home() {
 
             {/* your brand, your rules */}
             <section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
-                
-                <img className="rounded-md mx-auto md:w-full sm:hidden" src={SectionTwoImg} alt="" />
-                <img className="hidden sm:block rounded-md mx-auto md:w-full" src={SectionTwoImgV2} alt="" />
+                <img className="rounded-md mx-auto md:w-full" src={SectionFourImg} alt="" />
                 <div className="md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Your brand, your rules.</h1>
                     <p className="text-gray-500 text-lg">Our plans are tailored to your specific personality and needs; simply show us what you want and we'll take it from there.</p>
