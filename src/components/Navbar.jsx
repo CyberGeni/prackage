@@ -15,8 +15,8 @@ function Navbar() {
   }
 
   return (
-    <header className="flex justify-between mx-auto list-none overflow-hidden w-full bg-transparent fixed">
-        <h1 className="px-10 py-8  sm:px-14 sm:py-10 md:px-24 md:py-12 font-bold text-2xl">prackage</h1>
+    <header className="flex justify-between mx-auto list-none overflow-hidden w-full bg-transparent fixed z-10 backdrop-blur-3xl">
+        <h1 className="px-10 py-6 sm:px-14 sm:py-5 md:px-18 md:py-8 font-bold text-2xl">prackage</h1>
         <div className=
           {isActive ? "left-[0vw] md:left-unset transition-all flex flex-col md:flex-row justify-between w-full h-screen md:h-fit text-2xl md:text-base space-y-4 md:space-y-0 fixed md:relative bg-white" : "transition-all left-[100vw] absolute md:relative md:flex md:justify-between w-full md:left-0 md:text-lg md:my-2"}>
           <div className="flex justify-between px-10 py-8 md:px-0 md:py-0">    
@@ -27,7 +27,7 @@ function Navbar() {
               src={Close}
               />
           </div>
-          <nav className="space-y-7 md:w-full md:space-y-0 md:flex md:items-center md:justify-center px-10 md:py-8 md:px-0 md:space-x-5">
+          <nav className="space-y-7 md:w-full md:space-y-0 md:flex md:items-center md:justify-center px-10  md:px-0 md:space-x-4 lg:space-x-5 text-gray-500">
             <li>Home</li>
             <li>About us</li>
             <li>Pricing</li>
