@@ -27,7 +27,7 @@ function Navbar() {
               src={Close}
               />
           </div>
-          <nav className="space-y-7 md:w-full md:space-y-0 md:flex md:items-center md:justify-center px-10  md:px-0 md:space-x-4 lg:space-x-5 text-gray-500">
+          <nav className="space-y-7 md:w-full md:space-y-0 md:flex md:items-center md:justify-center px-10  md:px-0 md:space-x-4 lg:space-x-5 text-gray-900">
             <li>Home</li>
             <li>About us</li>
             <li>Pricing</li>
