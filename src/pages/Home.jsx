@@ -20,7 +20,7 @@ function Home() {
         <Navbar />
         <main>
             {/* hero */}
-            <section className="bg-gradient-to-b from-white via-blue-50 to-blue-100 h-screen flex flex-col px-[10%] mx-auto justify-center items-center space-y-5 sm:space-y-6 md:space-y-7">
+            <section className="h-screen flex flex-col px-[10%] mx-auto justify-center items-center space-y-5 sm:space-y-6 md:space-y-7">
                 
                     <h1 className="text-5xl mt-16 sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Create the life you want <span className="decoration-underline underline underline-offset-4 decoration-blue-600">now.</span></h1>
                     <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">It takes an entire career to build a great personal brand, Prackage makes it easier for you to connect, grow, evolve and enjoy the process of becoming a better you.</p>
