@@ -1,0 +1,12 @@
+.splide__pagination .splide__pagination__page.is-active {
+    display: none;
+}
+
+.splide__arrow {
+    border-radius: 50%;
+    border: 2px solid rgb(167, 178, 197) !important;
+}
+
+h1.personal-branding {
+    line-height: 1.3;
+}

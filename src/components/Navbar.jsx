@@ -2,7 +2,7 @@ import React from 'react'
 import Menu from '../assets/icons/menu.svg'
 import Close from '../assets/icons/close.svg'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar() {
 
   const [isActive, setActive] = useState(false)
@@ -19,7 +19,7 @@ function Navbar() {
         <h1 className="px-10 py-6 font-bold text-2xl">prackage</h1>
         <div className=
           {isActive ? "left-[0vw] md:left-unset transition-all flex flex-col md:flex-row justify-between w-full h-screen md:h-fit text-2xl md:text-base space-y-4 md:space-y-0 fixed md:relative bg-white" : "transition-all left-[100vw] absolute md:relative md:flex md:justify-between w-full md:left-0 md:text-lg md:my-2"}>
-          <div className="flex justify-between px-10 py-5 md:px-0 md:py-0">    
+          <div className="flex justify-between px-10 py-6 md:px-0 md:py-0">    
             <h1 className="font-bold md:hidden">prackage</h1>
             <img 
               onClick={handleClick}
@@ -27,10 +27,11 @@ function Navbar() {
               src={Close}
               />
           </div>
-          <nav className="space-y-7 md:w-full md:space-y-0 md:flex md:items-center md:justify-center px-10 md:py-3 md:px-0 md:space-x-5">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Pricing</li>
+          <nav className="space-y-7 md:w-full md:space-y-0 flex flex-col md:flex-row md:items-center md:justify-center px-10 md:py-3 md:px-0 md:space-x-5">
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/blog">Blog</Link>
           </nav>
 
           <div className="flex flex-col w-auto md:space-x-3 md:pr-10 md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0">

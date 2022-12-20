@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 import Arrow from '../assets/icons/right-arrow.svg'
 import TheGuardian from '../assets/images/theguardian.svg'
 import Techpoint from '../assets/images/techpoint.svg'
@@ -8,11 +9,11 @@ import TVC from '../assets/images/tvc-logo.svg'
 import Techcabal from '../assets/images/techcabal-logo.svg'
 import mtvbase from '../assets/images/mtvbase-logo.svg'
 import Pulse from '../assets/images/pulse-logo.svg'
-import SectionOneImg from '../assets/images/show-off-only-when-you-want.svg'
-import SectionTwoImg from '../assets/images/heavy-on-the-personal.svg'
-import SectionTwoImgV2 from '../assets/images/heavy-on-the-personal-2.svg'
-import SectionThreeImg from '../assets/images/your-dream-its-valid.svg'
-import SectionFourImg from '../assets/images/your-brand-your-rules.svg'
+import SectionOneImg from '../assets/images/show-off-only-when-you-want.png'
+import SectionTwoImg from '../assets/images/heavy-on-the-personal.png'
+import SectionTwoImgV2 from '../assets/images/heavy-on-the-personal-2.png'
+import SectionThreeImg from '../assets/images/your-dream-its-valid.png'
+import SectionFourImg from '../assets/images/your-brand-your-rules.png'
 import "../App.css"
 function Home() {
   return (
@@ -44,8 +45,10 @@ function Home() {
                 <img className="mx-auto md:w-full" src={SectionOneImg} alt="" />
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">Show off, only when you want</h1>
-                    <p className="text-gray-500 text-lg my-3">Don't fall into the trap of "putting yourself out there just for the sake of it. Out proprietary tool Humark helps you stand out and stay relevant without losing your essence - what makes you, you."</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3">Learn about Humark</button>
+                    <p className="text-gray-500 text-lg my-3 mb-2">Don't fall into the trap of "putting yourself out there just for the sake of it. Out proprietary tool Humark helps you stand out and stay relevant without losing your essence - what makes you, you."</p>
+                    <Link to="/humark" className="bg-blue-600 text-white rounded px-6 py-3 block w-fit">Learn about Humark
+                    </Link>
+                    
                 </div>
             </section>
             {/* heavy on the personal */}
