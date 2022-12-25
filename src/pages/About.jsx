@@ -29,8 +29,8 @@ function About() {
     <div className="font-BrOmega">
       <Navbar />
       <main className="pt-12">
-        <section className="px-10 py-10 sm:px-14 md:px-16 md:py-16">
-          <div className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs sm:my-2 w-fit">
+        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-16">
+          <div className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs sm:my-2 w-fit flex">
             About us
           </div>
           <div className="grid md:grid-cols-3 gap-x-2 sm:gap-x-4 md:gap-x-8">
@@ -50,7 +50,7 @@ function About() {
         </section>
         <img src={PeopleTouchingHands} alt="" />
         {/* our story */}
-        <section className="px-10 py-6 sm:px-14 md:px-16 md:py-10 my-4 grid md:grid-cols-2 gap-x-12">
+        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-10 my-4 grid md:grid-cols-2 gap-x-12">
           <h4 className="text-xl md:text-2xl my-3 font-semibold md:col-span-2">
             Our story
           </h4>
@@ -90,9 +90,9 @@ function About() {
           <Splide options={options} hasTrack={false} aria-label="...">
             <SplideTrack className="">
               <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-              <div className="sm:px-12 md:px-16 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+              <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
                   <div>
-                    <h1 className="text-2xl md:text-5xl my-4 font-semibold">
+                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
                       Recognizing our members...
                     </h1>
                     <p className="text-gray-300 my-2">
@@ -124,9 +124,9 @@ function About() {
                 </div>
               </SplideSlide>
               <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-              <div className="sm:px-12 md:px-16 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+              <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
                   <div>
-                    <h1 className="text-2xl md:text-5xl my-4 font-semibold">
+                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
                       Recognizing our members...
                     </h1>
                     <p className="text-gray-300 my-2">
@@ -157,9 +157,9 @@ function About() {
                 </div>
               </SplideSlide>
               <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-                <div className="sm:px-12 md:px-16 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+                <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
                   <div>
-                    <h1 className="text-2xl md:text-5xl my-4 font-semibold">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
                       Recognizing our members...
                     </h1>
                     <p className="text-gray-300 my-2">
@@ -195,7 +195,7 @@ function About() {
               <div className="splide__progress__bar bg-blue-600" />
             </div>
 
-            <div class="splide__arrows relative sm:absolute bottom-4 md:bottom-20  flex w-44 px-10 py-6 sm:px-14 md:px-16 md:mx-6 md:py-10 space-x-4 my-2">
+            <div class="splide__arrows relative sm:absolute bottom-4 md:bottom-20  flex w-44 px-12 py-10 sm:px-16 md:px-24 md:mx-6 lg:mx-14 md:py-10 space-x-4 my-2">
               <button class="splide__arrow splide__arrow--prev bg-transparent mx-6 my-5 p-4 w-auto h-auto">
                 <img src={ArrowLeft} alt="" />
               </button>

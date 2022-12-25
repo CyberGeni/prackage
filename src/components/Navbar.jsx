@@ -16,11 +16,11 @@ function Navbar() {
 
   return (
     <header className={isActive ? "fixed flex justify-between mx-auto list-none overflow-hidden w-full" : "fixed flex justify-between mx-auto list-none overflow-hidden w-full backdrop-blur-3xl"}>
-        <h1 className="px-10 py-6 font-bold text-2xl">prackage</h1>
+        <Link to="/" className="px-10 py-6 font-bold text-2xl">prackage</Link>
         <div className=
           {isActive ? "left-[0vw] md:left-unset transition-all flex flex-col md:flex-row justify-between w-full h-screen md:h-fit text-2xl md:text-base space-y-4 md:space-y-0 fixed md:relative bg-white" : "transition-all left-[100vw] absolute md:relative md:flex md:justify-between w-full md:left-0 md:text-lg md:my-2"}>
           <div className="flex justify-between px-10 py-6 md:px-0 md:py-0">    
-            <h1 className="font-bold md:hidden">prackage</h1>
+            <Link to="/" className="font-bold md:hidden">prackage</Link>
             <img 
               onClick={handleClick}
               className="w-4 cursor-pointer md:hidden"
@@ -28,15 +28,15 @@ function Navbar() {
               />
           </div>
           <nav className="space-y-7 md:w-full md:space-y-0 flex flex-col md:flex-row md:items-center md:justify-center px-10 md:py-3 md:px-0 md:space-x-5">
-            <Link to="/">Home</Link>
-            <Link to="/about">About us</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/blog">Blog</Link>
+            <Link className='focus:text-blue-500 hover:underline hover:underline-offset-2 hover:decoration-double hover:decoration-blue-500' to="/">Home</Link>
+            <Link className='focus:text-blue-500 hover:underline hover:underline-offset-2 hover:decoration-double hover:decoration-blue-500' to="/about">About us</Link>
+            <Link className='focus:text-blue-500 hover:underline hover:underline-offset-2 hover:decoration-double hover:decoration-blue-500' to="/pricing">Pricing</Link>
+            <Link className='focus:text-blue-500 hover:underline hover:underline-offset-2 hover:decoration-double hover:decoration-blue-500' to="/blog">Blog</Link>
           </nav>
 
-          <div className="flex flex-col w-auto md:space-x-3 md:pr-10 md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0">
-            <button className="md:w-max">Log In</button>
-            <button className="text-xl md:text-base md:rounded  md:w-max w-full bg-blue-600 mb-0 text-white px-6 py-4 md:py-2 ">Sign Up</button>
+          <div className="flex flex-col w-auto md:space-x-8 md:pr-10 md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0">
+            <button className="md:w-max hover:text-xl transition-all">Log In</button>
+            <button className="text-xl md:text-base md:rounded  md:w-max w-full bg-blue-600 mb-0 text-white px-6 py-4 md:py-2 md:hover:text-blue-600 md:hover:border-2 md:hover:border-blue-600 md:hover:bg-transparent transition-all ">Sign Up</button>
           </div>
         </div>
         <img onClick={handleClick} className="px-10 py-8 md:hidden md:h-fit" src={Menu} alt="" />

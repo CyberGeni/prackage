@@ -25,7 +25,7 @@ function Home() {
                 
                     <h1 className="text-5xl mt-16 sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">Create the life you want <span className="decoration-underline underline underline-offset-4 decoration-blue-600">now.</span></h1>
                     <p className="text-gray-500 text-center sm:text-lg md:text-xl md:max-w-xl">It takes an entire career to build a great personal brand, Prackage makes it easier for you to connect, grow, evolve and enjoy the process of becoming a better you.</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3">Get started</button>
+                    <button className="bg-blue-600 text-white rounded px-6 py-3 hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all ">Get started</button>
                 
             </section>
             {/* media worked with */}
@@ -46,7 +46,7 @@ function Home() {
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">Show off, only when you want</h1>
                     <p className="text-gray-500 text-lg my-3 mb-2">Don't fall into the trap of "putting yourself out there just for the sake of it. Out proprietary tool Humark helps you stand out and stay relevant without losing your essence - what makes you, you."</p>
-                    <Link to="/humark" className="bg-blue-600 text-white rounded px-6 py-3 block w-fit">Learn about Humark
+                    <Link to="/humark" className="bg-blue-600 text-white rounded px-6 py-3 block w-fit hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all ">Learn about Humark
                     </Link>
                     
                 </div>
@@ -59,7 +59,7 @@ function Home() {
                 <div className="md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Heavy on the “personal”</h1>
                     <p className="text-gray-500 text-lg">Personal branding is more than mere self-promotion. Prackage helps you grow, establish your worth in the right settings and make introductions that open up new opportunities for you</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
+                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
                 </div>
             </section>
             
@@ -69,7 +69,7 @@ function Home() {
                 <div className="order-first md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Your dream, it's valid</h1>
                     <p className="text-gray-500 text-lg">Get the headstart to build the fulfilling life you deserve. Monetise your skills, identify new income streams, launch your business, multiply your network, get things done and more. If you can dream it, we can help you achieve it.</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4 flex items-center">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
+                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4 flex items-center hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
                 </div>
             </section>
 
@@ -79,7 +79,7 @@ function Home() {
                 <div className="md:space-y-6">
                     <h1 className="font-bold text-3xl lg:text-4xl my-4">Your brand, your rules.</h1>
                     <p className="text-gray-500 text-lg">Our plans are tailored to your specific personality and needs; simply show us what you want and we'll take it from there.</p>
-                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
+                    <button className="bg-blue-600 text-white rounded px-6 py-3 mt-6 flex items-center hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all">Get started <img className="ml-2 w-3" src={Arrow} alt="" /></button>
                 </div>
             </section>
         </main>
