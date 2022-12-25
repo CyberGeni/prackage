@@ -40,8 +40,8 @@ function Humark() {
             <section className="bg-blue-600 mt-8 py-16">
                 <h1 className='text-white text-center text-3xl sm:text-4xl font-semibold max-w-3xl mx-auto px-12'>We are building and managing well-rounded humans with the past, present and the future in mind.</h1>
                 <div className='flex flex-col sm:flex-row justify-center items-center mx-auto my-8 text-center space-y-4 sm:space-y-0 sm:space-x-4'>
-                    <button className='bg-white w-fit text-gray-900 rounded px-5 py-3'>Build at your pace</button>
-                    <button className='border border-white w-fit bg-transparent text-white rounded px-5 py-3'>Jumpstart your brand</button>
+                    <button className='bg-white w-fit text-gray-900 rounded px-5 py-3 hover:outline hover:outline-offset-2 hover:outline-blue-200 transition-all'>Build at your pace</button>
+                    <button className='border border-white w-fit bg-transparent text-white rounded px-5 py-3 hover:outline hover:outline-offset-2 hover:outline-blue-200 transition-all'>Jumpstart your brand</button>
                 </div>
             </section>
         </main>
