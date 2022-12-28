@@ -41,7 +41,7 @@ function About() {
               </h1>
             </div>
             <p className="text-gray-500 col-span-1">
-              Prackage is a truly personal branding company. This means that
+              Prackage is a truly personal <span className="italic">personal</span> branding company. This means that
               it’s in our DNA to care about your overall growth as much as we
               care about your visibility. So, if it helps you grow and if it
               makes your life easier, we’ll do it.
