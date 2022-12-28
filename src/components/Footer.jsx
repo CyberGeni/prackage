@@ -7,7 +7,7 @@ function Footer() {
             <p className="text-gray-200 text-lg w-1/2">Build your prackaged life now.</p>
             <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4 hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:bg-transparent transition-all">View plans</button>
         </section>
-        <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4  py-12">
+        <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-x-8 sm:gap-x-0 gap-y-4 py-12">
             <ul className="space-y-4 flex flex-col ">
                 <Link to="/" className="text-gray-400 mt-7  text-sm">Product</Link>
                 <Link to="/" className="text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></Link>
