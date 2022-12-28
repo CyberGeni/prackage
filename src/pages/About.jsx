@@ -6,6 +6,7 @@ import Foza from "../assets/images/foza.png";
 import FozaMini from "../assets/images/foza-mini.png";
 import Mojirayo from "../assets/images/mojirayo.png";
 import MojirayoMini from "../assets/images/mojirayo-mini.png";
+import Toheeb from "../assets/images/toheeb.png";
 import ArrowRight from "../assets/icons/arrow-right.svg";
 import ArrowLeft from "../assets/icons/arrow-left.svg";
 import Whatsapp from "../assets/icons/whatsapp.svg";
@@ -25,6 +26,33 @@ function About() {
     resetProgress: false,
 
   };
+
+  const slides = [
+    {
+      id: 1,
+      name: "Foza Fawehinmi",
+      position: "CEO, Digital Music Commerce and Exchange",
+      image: Foza,
+      imageMini: FozaMini,
+      quote: "Who is set to release her debut book, the memoir titled “So Far So Foza”, on the 17th of February, 2023.",
+    },
+    {
+      id: 2,
+      name: "Mojirayo “Amoke OnTop” Olaniyan",
+      position: "Ex-branch manager, United Bank for Africa (UBA)",
+      image: Foza,
+      imageMini: FozaMini,
+      quote: "Who retired recently after 16 meritorious years in the Nigerian banking industry.",
+    },
+    {
+      id: 3,
+      name: "Toheeb Balogun",
+      position: "Co-founder & Director of Impact, The Hook Creative Agency",
+      image: Toheeb,
+      imageMini: Toheeb,
+      quote: "On the successful presentation of “Access to Blow” to His Excellency, The Lagos State Governor Babajide Sanwo-Olu.",
+    },
+  ]
   return (
     <div className="font-BrOmega">
       <Navbar />
@@ -41,7 +69,7 @@ function About() {
               </h1>
             </div>
             <p className="text-gray-500 col-span-1">
-              Prackage is a truly personal <span className="italic">personal</span> branding company. This means that
+              Prackage is a truly personal <span className="italic">personal</span> {" "} branding company. This means that
               it’s in our DNA to care about your overall growth as much as we
               care about your visibility. So, if it helps you grow and if it
               makes your life easier, we’ll do it.
@@ -89,106 +117,41 @@ function About() {
         <div className="bg-black pb-2 sm:pb-0">
           <Splide options={options} hasTrack={false} aria-label="...">
             <SplideTrack className="">
-              <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-              <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
-                  <div>
-                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
-                      Recognizing our members...
-                    </h1>
-                    <p className="text-gray-300 my-2">
-                      Who is set to release her debut book, the memoir titled "So
-                      Far So Foza", on the 17th of February, 2023
-                    </p>
-                  </div>
-                  <div className="md:mb-28">
-                    <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
-                      Foza Fawehinmi
-                    </h3>
-                    <p className="text-gray-300">
-                      CEO, Digital Music Commerce and Exchange
-                    </p>
-                  </div>
-                  
-                </div>
-                <div className="order-first md:order-last w-full my-4 sm:my-0">
-                  <img
-                    className="hidden md:block order-first w-full md:max-w-xl md:ml-auto"
-                    src={Foza}
-                    alt=""
-                  />
-                  <img
-                    className="md:hidden block order-first w-full"
-                    src={FozaMini}
-                    alt=""
-                  />
-                </div>
-              </SplideSlide>
-              <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-              <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
-                  <div>
-                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
-                      Recognizing our members...
-                    </h1>
-                    <p className="text-gray-300 my-2">
-                    Who retired recently after 16 meritorious years in the Nigerian banking industry.
-                    </p>
-                  </div>
-                  <div className="md:mb-28">
-                    <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
-                      Mojirayo “Amoke OnTop” Olaniyan
-                    </h3>
-                    <p className="text-gray-300">
-                      Ex-branch manager, United Bank for Africa (UBA)
-                    </p>
-                  </div>
-                  
-                </div>
-                <div className="order-first md:order-last w-full my- sm:my-0">
-                  <img
-                    className="hidden md:block order-first w-full md:max-w-xl md:ml-auto"
-                    src={Mojirayo}
-                    alt=""
-                  />
-                  <img
-                    className="md:hidden block order-first w-full md:max-w-lg"
-                    src={MojirayoMini}
-                    alt=""
-                  />
-                </div>
-              </SplideSlide>
-              <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
+              { slides.map( ( slide ) => (
+                <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
                 <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
-                  <div>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
-                      Recognizing our members...
-                    </h1>
-                    <p className="text-gray-300 my-2">
-                      On the successful presentation of “Access to Blow” to His Excellency, The Lagos State Governor Babajide Sanwo-Olu.
-                    </p>
+                    <div>
+                      <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
+                        Recognizing:
+                      </h1>
+                      <p className="text-gray-300 my-2">
+                        {slide.quote}
+                      </p>
+                    </div>
+                    <div className="md:mb-28">
+                      <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
+                        {slide.name}
+                      </h3>
+                      <p className="text-gray-300">
+                        {slide.position}
+                      </p>
+                    </div>
+                    
                   </div>
-                  <div className="md:mb-28">
-                    <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
-                      Toheeb Balogun
-                    </h3>
-                    <p className="text-gray-300">
-                    Co-founder & Director of Impact, The Hook Creative Agency
-                    </p>
+                  <div className="order-first md:order-last w-full my-4 sm:my-0">
+                    <img
+                      className="hidden md:block order-first w-full md:max-w-xl md:ml-auto"
+                      src={slide.image}
+                      alt=""
+                    />
+                    <img
+                      className="md:hidden block order-first w-full"
+                      src={slide.imageMini}
+                      alt=""
+                    />
                   </div>
-                  
-                </div>
-                <div className="order-first md:order-last w-full my-4 sm:my-0">
-                  <img
-                    className="hidden md:block w-full md:max-w-xl md:ml-auto"
-                    src={Foza}
-                    alt=""
-                  />
-                  <img
-                    className="md:hidden block w-full"
-                    src={FozaMini}
-                    alt=""
-                  />
-                </div>
-              </SplideSlide>
+                </SplideSlide>
+              ))}
             </SplideTrack>
 
             <div className="splide__progress">
