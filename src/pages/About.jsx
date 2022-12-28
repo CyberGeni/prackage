@@ -12,7 +12,6 @@ import ArrowLeft from "../assets/icons/arrow-left.svg";
 import Whatsapp from "../assets/icons/whatsapp.svg";
 import Email from "../assets/icons/email.svg";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { Link } from "react-router-dom";
 import "@splidejs/react-splide/css";
 import "../App.css";
 
@@ -118,9 +117,32 @@ function About() {
         {/* carousel goes here */}
         <div className="bg-black pb-2 sm:pb-0">
           <Splide options={options} hasTrack={false} aria-label="...">
-            <SplideTrack >
+            <SplideTrack>
               {slides.map((slide) => (
                 <SplideSlide className="bg-black text-white h-fit">
+                  <section className="hidden md:flex ">
+                    <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+                      <div>
+                        <h1 className="md:text-4xl lg:text-5xl my-4 font-semibold">
+                          Recognizing:
+                        </h1>
+                        <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
+                          {slide.name}
+                        </h3>
+                        <p className="text-gray-300">{slide.position}</p>
+                      </div>
+                      <div className="mb-16">
+                        <p className="text-gray-300 my-2 text-lg lg:text-xl">{slide.quote}</p>
+                      </div>
+                    </div>
+                    <div className="w-full">
+                      <img
+                        className="w-full md:max-w-xl md:ml-auto"
+                        src={slide.image}
+                        alt=""
+                      />
+                    </div>
+                  </section>
                   {/* <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
                     <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
                       Recognizing:
@@ -148,7 +170,7 @@ function About() {
                     />
                   </div> */}
                   {/* mobile carousel */}
-                  <section className="px-12 sm:px-16">
+                  <section className="md:hidden px-12 sm:px-16">
                     <h1 className="text-3xl mt-10 my-6 font-semibold">
                       Recognizing:
                     </h1>
@@ -163,11 +185,11 @@ function About() {
               ))}
             </SplideTrack>
 
-            <div className="splide__progress mt-2 mb-20">
+            <div className="splide__progress mt-2 mb-20 md:mb-0">
               <div className="splide__progress__bar bg-blue-600" />
             </div>
 
-            <div class="splide__arrows relative sm:absolute -top-12 flex w-44 px-12 space-x-4 my-2">
+            <div class="splide__arrows relative -top-12 md:-top-28 flex w-44 px-12 md:ml-6 lg:ml-12 space-x-4 my-2">
               <button class="splide__arrow splide__arrow--prev bg-transparent mx-6 my-5 p-4 w-auto h-auto">
                 <img src={ArrowLeft} alt="" />
               </button>
