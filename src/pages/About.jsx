@@ -13,18 +13,16 @@ import Whatsapp from "../assets/icons/whatsapp.svg";
 import Email from "../assets/icons/email.svg";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { Link } from "react-router-dom";
-import '@splidejs/react-splide/css';
-import "../App.css"
+import "@splidejs/react-splide/css";
+import "../App.css";
 
 function About() {
-
   const options = {
-    type         : 'loop',
-    perPage : 1,
-    autoplay     : true,
-    pauseOnHover : false,
+    type: "loop",
+    perPage: 1,
+    autoplay: true,
+    pauseOnHover: false,
     resetProgress: false,
-
   };
 
   const slides = [
@@ -34,25 +32,28 @@ function About() {
       position: "CEO, Digital Music Commerce and Exchange",
       image: Foza,
       imageMini: FozaMini,
-      quote: "Who is set to release her debut book, the memoir titled “So Far So Foza”, on the 17th of February, 2023.",
+      quote:
+        "Who is set to release her debut book, the memoir titled “So Far So Foza”, on the 17th of February, 2023.",
     },
     {
       id: 2,
       name: "Mojirayo “Amoke OnTop” Olaniyan",
       position: "Ex-branch manager, United Bank for Africa (UBA)",
-      image: Foza,
-      imageMini: FozaMini,
-      quote: "Who retired recently after 16 meritorious years in the Nigerian banking industry.",
+      image: Mojirayo,
+      imageMini: MojirayoMini,
+      quote:
+        "Who retired recently after 16 meritorious years in the Nigerian banking industry.",
     },
     {
       id: 3,
       name: "Toheeb Balogun",
       position: "Co-founder & Director of Impact, The Hook Creative Agency",
       image: Toheeb,
-      imageMini: Toheeb,
-      quote: "On the successful presentation of “Access to Blow” to His Excellency, The Lagos State Governor Babajide Sanwo-Olu.",
+      imageMini: FozaMini,
+      quote:
+        "On the successful presentation of “Access to Blow” to His Excellency, The Lagos State Governor Babajide Sanwo-Olu.",
     },
-  ]
+  ];
   return (
     <div className="font-BrOmega">
       <Navbar />
@@ -69,10 +70,11 @@ function About() {
               </h1>
             </div>
             <p className="text-gray-500 col-span-1">
-              Prackage is a truly personal <span className="italic">personal</span> {" "} branding company. This means that
-              it’s in our DNA to care about your overall growth as much as we
-              care about your visibility. So, if it helps you grow and if it
-              makes your life easier, we’ll do it.
+              Prackage is a truly personal{" "}
+              <span className="italic">personal</span> branding company. This
+              means that it’s in our DNA to care about your overall growth as
+              much as we care about your visibility. So, if it helps you grow
+              and if it makes your life easier, we’ll do it.
             </p>
           </div>
         </section>
@@ -116,27 +118,22 @@ function About() {
         {/* carousel goes here */}
         <div className="bg-black pb-2 sm:pb-0">
           <Splide options={options} hasTrack={false} aria-label="...">
-            <SplideTrack className="">
-              { slides.map( ( slide ) => (
-                <SplideSlide className="p-10 sm:p-0 text-white grid md:grid-cols-2 bg-black">
-                <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+            <SplideTrack >
+              {slides.map((slide) => (
+                <SplideSlide className="bg-black text-white h-fit">
+                  {/* <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
+                      Recognizing:
+                    </h1>
                     <div>
-                      <h1 className="sm:text-3xl md:text-4xl lg:text-5xl my-4 font-semibold">
-                        Recognizing:
-                      </h1>
-                      <p className="text-gray-300 my-2">
-                        {slide.quote}
-                      </p>
+                      <p className="text-gray-300 my-2">{slide.quote}</p>
                     </div>
                     <div className="md:mb-28">
                       <h3 className="text-white sm:text-lg md:text-xl font-semibold mt-4 my-2">
                         {slide.name}
                       </h3>
-                      <p className="text-gray-300">
-                        {slide.position}
-                      </p>
+                      <p className="text-gray-300">{slide.position}</p>
                     </div>
-                    
                   </div>
                   <div className="order-first md:order-last w-full my-4 sm:my-0">
                     <img
@@ -149,16 +146,28 @@ function About() {
                       src={slide.imageMini}
                       alt=""
                     />
-                  </div>
+                  </div> */}
+                  {/* mobile carousel */}
+                  <section className="px-12 sm:px-16">
+                    <h1 className="text-3xl mt-10 my-6 font-semibold">
+                      Recognizing:
+                    </h1>
+                    <img className="w-fit" src={slide.imageMini} alt="" />
+                    <h3 className="text-white text-xl font-semibold mt-4 my-3">
+                      {slide.name}
+                    </h3>
+                    <p className="text-gray-300 text-xl">{slide.position}</p>
+                    <p className="text-gray-300 my-2 text-lg">{slide.quote}</p>
+                  </section>
                 </SplideSlide>
               ))}
             </SplideTrack>
 
-            <div className="splide__progress">
+            <div className="splide__progress mt-2 mb-20">
               <div className="splide__progress__bar bg-blue-600" />
             </div>
 
-            <div class="splide__arrows relative sm:absolute bottom-4 md:bottom-20  flex w-44 px-12 py-10 sm:px-16 md:px-24 md:mx-6 lg:mx-14 md:py-10 space-x-4 my-2">
+            <div class="splide__arrows relative sm:absolute -top-12 flex w-44 px-12 space-x-4 my-2">
               <button class="splide__arrow splide__arrow--prev bg-transparent mx-6 my-5 p-4 w-auto h-auto">
                 <img src={ArrowLeft} alt="" />
               </button>
@@ -172,7 +181,7 @@ function About() {
             </button> */}
           </Splide>
         </div>
-        
+
         {/* contact */}
         <section className="px-10 py-6 sm:px-14 md:px-16 md:py-10 my-2">
           <h2 className="text-gray-900 text-xl md-text-2xl font-semibold my-2">
