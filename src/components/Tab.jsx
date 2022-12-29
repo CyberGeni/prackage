@@ -82,9 +82,11 @@ export default function HorizontalTab() {
   });
   console.log(plans);
   return (
-    <div className="mx-auto w-full max-w-md px-2 py-8 sm:px-0">
+    <div className="mx-auto w-full py-8 bg-blue-50">
+      <h1 className="bg-white text-center text-3xl text-gray-600 font-semibold pt-16">Choose one that fits</h1>
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1">
+        <div className="bg-white w-full py-4 pb-16">
+        <Tab.List className="flex space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
           {Object.keys(plans).map((plan) => (
             <Tab
               key={plan}
@@ -94,7 +96,7 @@ export default function HorizontalTab() {
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white shadow"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:bg-blue-100"
+                    : "text-gray-500 hover:bg-white/[0.12] hover:bg-blue-100"
                 )
               }
             >
@@ -102,20 +104,21 @@ export default function HorizontalTab() {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2">
+        </div>
+        <Tab.Panels className="mt-2 mx-auto">
           {Object.values(plans).map((billing, idx) => (
             <Tab.Panel
               key={idx}
               className={classNames(
-                "rounded-xl bg-white p-3",
+                "rounded-xl p-3 w-3/5 mx-auto ",
                 "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2"
               )}
             >
-              <section className="">
+              <section className="w-full grid gap-8 md:grid-cols-2">
                 {billing.map((bill) => (
                   <div
                     key={billing.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
+                    className="relative rounded-md p-3 bg-white"
                   >
                     <h3 className="text-sm font-medium leading-5">
                       {bill.title}
