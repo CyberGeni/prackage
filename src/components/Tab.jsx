@@ -11,7 +11,7 @@ export default function HorizontalTab() {
       {
         id: 1,
         type: "Standard plan",
-        price: "66,000",
+        price: "100,000",
         billing: "Billed monthly",
         features: [
           "C&D list media coverage",
@@ -47,8 +47,8 @@ export default function HorizontalTab() {
       {
         id: 1,
         type: "Standard plan",
-        price: "100,000",
-        billing: "Billed monthly",
+        price: "66,000",
+        billing: "Billed quarterly",
         features: [
           "C&D list media coverage",
           '8 hrs daily errands a.k.a. "Get things done!"',
@@ -62,6 +62,7 @@ export default function HorizontalTab() {
           "Dedicated personal brand manager",
           "Personal brand roadmap",
         ],
+        button: "Pay now",
       },
       {
         id: 2,
@@ -77,6 +78,7 @@ export default function HorizontalTab() {
           "Photography",
           "Media appearances",
         ],
+        button: "Request a call",
       },
     ],
   });
@@ -110,30 +112,47 @@ export default function HorizontalTab() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "rounded-xl p-3 w-3/5 mx-auto ",
+                "rounded-xl p-3 w-4/5 md:w-5/6 mx-auto ",
                 "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2"
               )}
             >
-              <section className="w-full grid gap-8 md:grid-cols-2">
+              <section className="grid gap-6 md:gap-8 md:grid-cols-2">
                 {billing.map((bill) => (
                   <div
                     key={billing.id}
-                    className="relative rounded-md p-3 bg-white"
+                    className="relative rounded-md bg-white"
                   >
-                    <h3 className="text-sm font-medium leading-5">
-                      {bill.title}
-                    </h3>
-
-                    <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-                      <li>{bill.type}</li>
-                      <li>{bill.price}</li>
-                    </ul>
-                    {bill.features.map((feature) => (
+                    <div className="flex justify-between items-center px-4 py-6 border-b gap-1">
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900">
+                          {bill.type}
+                        </h3>
+                        <p className="text-sm text-gray-500">
+                          {bill.billing}
+                        </p>
+                      </div>
+                      <div className="flex justify-end flex-wrap items-start">
+                        {bill.price && 
+                          <span className="text-2xl font-extrabold mx-1">N</span>
+                        }
+                        <p className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-gray-900">
+                          {bill.price}
+                        </p>
+                        {bill.price &&
+                          <span className="self-end text-gray-600 mb-1.5 mx-1">per month</span>
+                        }
+                      </div>
+                    </div>
+                    <h4 className="text-sm font-bold text-gray-700 px-4 pt-3 pb-2">FEATURES</h4>
+                    <div className="grid space-y-3 px-4">
+                      
+                      {bill.features.map((feature) => (
                       <div
                         key={feature}
                         className="flex items-center space-x-2"
                       >
                         <svg
+                          className="w-5 h-5"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
@@ -148,21 +167,20 @@ export default function HorizontalTab() {
                             fill="#2F80ED"
                           />
                         </svg>
-                        <p className="text-sm font-normal leading-5 text-gray-500">
+                        <p className="text-wrap w-fit text-sm font-normal leading-5 text-gray-500">
                           {feature}
                         </p>
                       </div>
                     ))}
-                    <a
-                      href="#"
-                      className={classNames(
-                        "absolute inset-0 rounded-md",
-                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
-                      )}
-                    />
+                    </div>
+                    <div>
+                      <button></button>
+                      <button></button>
+                    </div>            
                   </div>
                 ))}
               </section>
+
             </Tab.Panel>
           ))}
         </Tab.Panels>
