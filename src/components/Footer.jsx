@@ -30,7 +30,6 @@ function Footer() {
                 <Link to="/" className="text-gray-400 mt-7 text-sm">Legal</Link>
                 <Link to="/" className="text-gray-200">Terms</Link>
                 <Link to="/" className="text-gray-200">Privacy</Link>
-                <Link to="/" className="text-gray-200">Contact</Link>
             </ul>
         </section>
         <section className="md:flex md:justify-between md:items-center mt-6 md:mt-8">
