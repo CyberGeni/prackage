@@ -18,7 +18,7 @@ export default function HorizontalTab() {
           '8 hrs daily errands a.k.a. "Get things done!"',
           "Image management",
           "Profile update",
-          "Priority cha and email support",
+          "Priority chat and email support",
           "Unlimited consultation",
           "Customised birthday cards",
           "Executive bio",
@@ -26,6 +26,10 @@ export default function HorizontalTab() {
           "Dedicated personal brand manager",
           "Personal brand roadmap",
         ],
+        cta: "Pay now",
+        ctaLink: "",
+        subCta: "",
+        subCtaLink: ""
       },
       {
         id: 2,
@@ -41,6 +45,10 @@ export default function HorizontalTab() {
           "Photography",
           "Media appearances",
         ],
+        cta: "Request a call",
+        ctaLink: "",
+        subCta: "Chat with us",
+        subCtaLink: ""
       },
     ],
     "Quarterly billing": [
@@ -54,7 +62,7 @@ export default function HorizontalTab() {
           '8 hrs daily errands a.k.a. "Get things done!"',
           "Image management",
           "Profile update",
-          "Priority cha and email support",
+          "Priority chat and email support",
           "Unlimited consultation",
           "Customised birthday cards",
           "Executive bio",
@@ -62,7 +70,10 @@ export default function HorizontalTab() {
           "Dedicated personal brand manager",
           "Personal brand roadmap",
         ],
-        button: "Pay now",
+        cta: "Request a call",
+        ctaLink: "",
+        subCta: "Chat with us",
+        subCtaLink: ""
       },
       {
         id: 2,
@@ -78,17 +89,17 @@ export default function HorizontalTab() {
           "Photography",
           "Media appearances",
         ],
-        button: "Request a call",
+        buttonOne: "Request a call",
       },
     ],
   });
   console.log(plans);
   return (
     <div className="mx-auto w-full py-8 bg-blue-50">
-      <h1 className="bg-white text-center text-3xl text-gray-600 font-semibold pt-16">Choose one that fits</h1>
+      <h1 className="bg-white text-center text-3xl text-gray-700 font-semibold pt-16">Choose one that fits</h1>
       <Tab.Group>
         <div className="bg-white w-full py-4 pb-16">
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
+        <Tab.List className="flex w-3/5 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
           {Object.keys(plans).map((plan) => (
             <Tab
               key={plan}
@@ -120,7 +131,7 @@ export default function HorizontalTab() {
                 {billing.map((bill) => (
                   <div
                     key={billing.id}
-                    className="relative rounded-md bg-white"
+                    className="relative rounded-md bg-white h-auto shadow flex flex-col"
                   >
                     <div className="flex justify-between items-center px-4 py-6 border-b gap-1">
                       <div>
@@ -144,7 +155,10 @@ export default function HorizontalTab() {
                       </div>
                     </div>
                     <h4 className="text-sm font-bold text-gray-700 px-4 pt-3 pb-2">FEATURES</h4>
-                    <div className="grid space-y-3 px-4">
+                    {!bill.price &&
+                      <p className="text-sm text-gray-500 px-4 pb-3">Some of the features in <span className="font-semibold">Standard</span> plus... </p>
+                    }
+                    <div className="grid space-y-1 px-4 h-full">
                       
                       {bill.features.map((feature) => (
                       <div
@@ -173,9 +187,11 @@ export default function HorizontalTab() {
                       </div>
                     ))}
                     </div>
-                    <div>
-                      <button></button>
-                      <button></button>
+                    <div className="p-4 space-y-2 border-t border-t-gray-200 mt-4 flex flex-col justify-end mb-0">
+                      {bill.subCta &&
+                        <a href={""} className="flex justify-center border hover:bg-gray-50 transition-all border-gray-200 rounded p-1.5 text-sm">{bill.subCta}</a>
+                      }
+                      <a href={""} className="flex justify-center bg-blue-500 hover:bg-white hover:text-blue-600 transition-all hover:ring rounded p-2 text-white text-sm">{bill.cta}</a>
                     </div>            
                   </div>
                 ))}

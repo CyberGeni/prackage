@@ -39,7 +39,7 @@ function Carousel() {
     },
     {
       id: 3,
-      name: "Toheeb Balogun",
+      name: "Toheeb Dele-Balogun",
       position: "Co-founder & Director of Impact, The Hook Creative Agency",
       image: Toheeb,
       imageMini: FozaMini,
