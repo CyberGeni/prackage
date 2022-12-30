@@ -70,9 +70,9 @@ export default function HorizontalTab() {
           "Dedicated personal brand manager",
           "Personal brand roadmap",
         ],
-        cta: "Request a call",
+        cta: "Pay now",
         ctaLink: "",
-        subCta: "Chat with us",
+        subCta: "",
         subCtaLink: ""
       },
       {
@@ -89,7 +89,10 @@ export default function HorizontalTab() {
           "Photography",
           "Media appearances",
         ],
-        buttonOne: "Request a call",
+        cta: "Request a call",
+        ctaLink: "",
+        subCta: "Chat with us",
+        subCtaLink: ""
       },
     ],
   });
@@ -99,10 +102,9 @@ export default function HorizontalTab() {
       <h1 className="bg-white text-center text-3xl text-gray-700 font-semibold pt-16">Choose one that fits</h1>
       <Tab.Group>
         <div className="bg-white w-full py-4 pb-16">
-        <Tab.List className="flex w-3/5 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
-          {Object.keys(plans).map((plan) => (
+        <Tab.List className="flex w-5/6 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
+          
             <Tab
-              key={plan}
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-gray-700",
@@ -113,9 +115,22 @@ export default function HorizontalTab() {
                 )
               }
             >
-              {plan}
+              Monthly billing
             </Tab>
-          ))}
+            <Tab
+              className={({ selected }) =>
+                classNames(
+                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-gray-700",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2",
+                  selected
+                    ? "bg-white shadow"
+                    : "text-gray-500 hover:bg-white/[0.12] hover:bg-blue-100"
+                )
+              }
+            >
+              Quarterly billing
+              <span className="text-[10px] bg-gray-100 text-gray-700 rounded-full ml-1 px-2 py-1">Save 12%</span>
+            </Tab>
         </Tab.List>
         </div>
         <Tab.Panels className="mt-2 mx-auto">
@@ -123,8 +138,8 @@ export default function HorizontalTab() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "rounded-xl p-3 w-4/5 md:w-5/6 mx-auto ",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2"
+                "rounded-xl p-3 w-11/12 md:w-5/6 mx-auto ",
+                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100"
               )}
             >
               <section className="grid gap-6 md:gap-8 md:grid-cols-2">
