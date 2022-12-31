@@ -35,7 +35,7 @@ function About() {
         <img src={PeopleTouchingHands} alt="" />
         
         {/* our story */}
-        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-10 my-4 grid md:grid-cols-2 gap-x-12">
+        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-10 my-4 grid md:grid-cols-2 gap-x-12 lg:gap-x-20">
           <h4 className="text-xl md:text-2xl my-3 font-semibold md:col-span-2">
             Our story
           </h4>
@@ -75,7 +75,7 @@ function About() {
         <Carousel />
         
         {/* contact */}
-        <section className="px-10 py-6 sm:px-14 md:px-16 md:py-10 my-2">
+        <section className="px-10 py-6 sm:px-14 md:px-16 lg:px-24 md:py-10 my-2">
           <h2 className="text-gray-900 text-xl md-text-2xl font-semibold my-2">
             Contact us
           </h2>

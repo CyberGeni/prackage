@@ -108,7 +108,7 @@ export default function HorizontalTab() {
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-gray-700",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none",
                   selected
                     ? "bg-white shadow"
                     : "text-gray-500 hover:bg-white/[0.12] hover:bg-blue-100"
@@ -121,7 +121,7 @@ export default function HorizontalTab() {
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-gray-700",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-100 focus:outline-none focus:ring-2",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-50/5 focus:outline-none ",
                   selected
                     ? "bg-white shadow"
                     : "text-gray-500 hover:bg-white/[0.12] hover:bg-blue-100"
@@ -129,7 +129,7 @@ export default function HorizontalTab() {
               }
             >
               Quarterly billing
-              <span className="text-[10px] bg-gray-100 text-gray-700 rounded-full ml-1 px-2 py-1">Save 12%</span>
+              <span className="text-[10px] bg-gray-200 text-gray-700 rounded-full ml-1 px-2 py-1">Save 12%</span>
             </Tab>
         </Tab.List>
         </div>
@@ -173,40 +173,41 @@ export default function HorizontalTab() {
                     {!bill.price &&
                       <p className="text-sm text-gray-500 px-4 pb-3">Some of the features in <span className="font-semibold">Standard</span> plus... </p>
                     }
-                    <div className="grid space-y-1 px-4 h-full">
-                      
+                    <div className=" px-4 h-full">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 lg:gap-2 space-y-3 lg:space-y-2"> 
                       {bill.features.map((feature) => (
-                      <div
-                        key={feature}
-                        className="flex items-center space-x-2"
-                      >
-                        <svg
-                          className="w-5 h-5"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          key={feature}
+                          className="flex items-center space-x-2"
                         >
-                          <rect width="24" height="24" rx="12" fill="#D1E9FF" />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M17.096 7.39016L9.93602 14.3002L8.03602 12.2702C7.68602 11.9402 7.13602 11.9202 6.73602 12.2002C6.34602 12.4902 6.23602 13.0002 6.47602 13.4102L8.72602 17.0702C8.94602 17.4102 9.32601 17.6202 9.75601 17.6202C10.166 17.6202 10.556 17.4102 10.776 17.0702C11.136 16.6002 18.006 8.41016 18.006 8.41016C18.906 7.49016 17.816 6.68016 17.096 7.38016V7.39016Z"
-                            fill="#2F80ED"
-                          />
-                        </svg>
-                        <p className="text-wrap w-fit text-sm font-normal leading-5 text-gray-500">
-                          {feature}
-                        </p>
+                          <svg
+                            className="w-5 h-5"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="24" height="24" rx="12" fill="#D1E9FF" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.096 7.39016L9.93602 14.3002L8.03602 12.2702C7.68602 11.9402 7.13602 11.9202 6.73602 12.2002C6.34602 12.4902 6.23602 13.0002 6.47602 13.4102L8.72602 17.0702C8.94602 17.4102 9.32601 17.6202 9.75601 17.6202C10.166 17.6202 10.556 17.4102 10.776 17.0702C11.136 16.6002 18.006 8.41016 18.006 8.41016C18.906 7.49016 17.816 6.68016 17.096 7.38016V7.39016Z"
+                              fill="#2F80ED"
+                            />
+                          </svg>
+                          <p className="text-wrap w-fit h-fit text-sm font-normal leading-5 text-gray-500">
+                            {feature}
+                          </p>
+                        </div>
+                      ))}
                       </div>
-                    ))}
                     </div>
                     <div className="p-4 space-y-2 border-t border-t-gray-200 mt-4 flex flex-col justify-end mb-0">
                       {bill.subCta &&
-                        <a href={""} className="flex justify-center border hover:bg-gray-50 transition-all border-gray-200 rounded p-1.5 text-sm">{bill.subCta}</a>
+                        <a href={""} className="flex justify-center border hover:bg-gray-50 transition-all border-gray-200 rounded p-2.5 text-sm">{bill.subCta}</a>
                       }
-                      <a href={""} className="flex justify-center bg-blue-500 hover:bg-white hover:text-blue-600 transition-all hover:ring rounded p-2 text-white text-sm">{bill.cta}</a>
+                      <a href={""} className="flex justify-center bg-blue-500 hover:bg-blue-700 transition-all rounded p-3 text-white text-sm">{bill.cta}</a>
                     </div>            
                   </div>
                 ))}
