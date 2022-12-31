@@ -85,10 +85,10 @@ function About() {
           </p>
           <div className="flex space-x-3 my-4">
             <a href="https://wa.me/2347062570370">
-              <img src={Whatsapp} alt="" />
+              <img className="hover:scale-105 transition-all" src={Whatsapp} alt="" />
             </a>
             <a href="mailto:guru@prackage.com">
-              <img src={Email} alt="" />
+              <img className="hover:scale-105 transition-all" src={Email} alt="" />
             </a>
           </div>
         </section>

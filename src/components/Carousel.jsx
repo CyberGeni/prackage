@@ -101,7 +101,7 @@ function Carousel() {
         </div>
 
         {/* controls */}
-        <div class="splide__arrows relative -top-12 md:-top-28 flex w-44 px-12 md:ml-6 lg:ml-12 space-x-4 my-2">
+        <div class="splide__arrows relative -top-12 md:-top-28 flex w-44 px-12 sm:ml-6 lg:ml-12 space-x-4 my-2">
           <button class="splide__arrow splide__arrow--prev bg-transparent mx-6 my-5 p-4 w-auto h-auto">
             <img src={ArrowLeft} alt="" />
           </button>
