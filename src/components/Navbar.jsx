@@ -15,7 +15,7 @@ function Navbar() {
   }
 
   return (
-    <header className={isActive ? "fixed flex justify-between mx-auto list-none overflow-hidden w-full" : "fixed flex justify-between mx-auto list-none overflow-hidden w-full backdrop-blur-3xl"}>
+    <header className={isActive ? "fixed flex justify-between mx-auto list-none overflow-hidden w-full z-50" : "z-50 fixed flex justify-between mx-auto list-none overflow-hidden w-full backdrop-blur-3xl"}>
         <Link to="/" className="px-10 py-6 font-bold text-2xl">prackage</Link>
         <div className=
           {isActive ? "left-[0vw] md:left-unset transition-all flex flex-col md:flex-row justify-between w-full h-screen md:h-fit text-2xl md:text-base space-y-4 md:space-y-0 fixed md:relative bg-white" : "transition-all left-[100vw] absolute md:relative md:flex md:justify-between w-full md:left-0 md:text-lg md:my-2"}>

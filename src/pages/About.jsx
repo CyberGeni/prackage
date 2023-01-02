@@ -46,7 +46,7 @@ function About() {
               existence is our intense desire to see our members grow and live
               fulfilling lives.
             </p>
-            <blockquote className="text-gray-500 border-l-2 md:border-l-4 border-gray-400 border-spacing-3 pl-3 text-2xl md:text-4xl my-4">
+            <blockquote className="text-gray-500 border-l-2 md:border-l-4 border-gray-400 border-spacing-3 pl-3 text-2xl md:text-4xl mt-6 my-4 leading-normal md:leading-snug">
               Prackage is a personal branding company like no other, and the
               proofs are there to see.
             </blockquote>

@@ -102,7 +102,7 @@ export default function HorizontalTab() {
       <h1 className="bg-white text-center text-3xl text-gray-700 font-semibold pt-16">Choose one that fits</h1>
       <Tab.Group>
         <div className="bg-white w-full py-4 pb-16">
-        <Tab.List className="flex w-10/12 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-md mx-auto">
+        <Tab.List className="flex w-10/12 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-xs sm:max-w-md mx-auto">
           
             <Tab
               className={({ selected }) =>
