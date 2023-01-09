@@ -25,6 +25,7 @@ function Navbar() {
               onClick={handleClick}
               className="w-4 cursor-pointer md:hidden"
               src={Close}
+              alt="Close Icon"
               />
           </div>
           <nav className="space-y-7 md:w-full md:space-y-0 flex flex-col md:flex-row md:items-center md:justify-center px-10 md:py-3 md:px-0 md:space-x-5">

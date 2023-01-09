@@ -8,29 +8,29 @@ function Footer() {
             <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4 hover:bg-blue-700 transition-all">View plans</button>
         </section>
         <section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-x-10 sm:gap-x-0 gap-y-4 py-12">
-            <ul className="space-y-4 flex flex-col ">
+            <div className="space-y-4 flex flex-col ">
                 <Link to="/" className="text-gray-400 mt-7  text-sm">Product</Link>
                 <Link to="/" className="text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></Link>
                 <Link to="/humark" className="text-gray-200">Solutions</Link>
                 <Link to="/pricing" className="text-gray-200">Pricing</Link>
-            </ul>
-            <ul className="space-y-4 flex flex-col ">
+            </div>
+            <div className="space-y-4 flex flex-col ">
                 <Link to="/" className="text-gray-400 mt-7 text-sm">Company</Link>
                 <Link to="/about" className="text-gray-200">About us</Link>
                 <Link to="/" className="text-gray-200">Press</Link>
                 <Link to="/" className="text-gray-200">Contact</Link>
-            </ul>
-            <ul className="space-y-4 flex flex-col ">
+            </div>
+            <div className="space-y-4 flex flex-col ">
                 <Link to="/" className="text-gray-400 mt-7 text-sm">Social</Link>
                 <Link to="/" className="text-gray-200">Twitter</Link>
                 <Link to="/" className="text-gray-200">LinkedIn</Link>
                 <Link to="/" className="text-gray-200">Facebook</Link>
-            </ul>
-            <ul className="space-y-4 flex flex-col ">
+            </div>
+            <div className="space-y-4 flex flex-col ">
                 <Link to="/" className="text-gray-400 mt-7 text-sm">Legal</Link>
                 <Link to="/" className="text-gray-200">Terms</Link>
                 <Link to="/" className="text-gray-200">Privacy</Link>
-            </ul>
+            </div>
         </section>
         <section className="md:flex md:justify-between md:items-center mt-6 md:mt-8">
             <h1 className="text-white text-4xl font-bold">prackage</h1>
