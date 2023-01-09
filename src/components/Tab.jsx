@@ -55,7 +55,7 @@ export default function HorizontalTab() {
       {
         id: 1,
         type: "Standard plan",
-        price: "66,000",
+        price: "88,000",
         billing: "Billed quarterly",
         features: [
           "C&D list media coverage",
@@ -171,7 +171,7 @@ export default function HorizontalTab() {
                     </div>
                     <h4 className="text-sm font-bold text-gray-700 px-4 pt-3 pb-2">FEATURES</h4>
                     {!bill.price &&
-                      <p className="text-sm text-gray-500 px-4 pb-3">Some of the features in <span className="font-semibold">Standard</span> plus... </p>
+                      <p className="text-sm text-gray-500 px-4 pb-3">Some of the sweetness in <span className="font-semibold">Standard</span> plus... </p>
                     }
                     <div className=" px-4 h-full">
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 lg:gap-2 space-y-3 lg:space-y-2"> 
