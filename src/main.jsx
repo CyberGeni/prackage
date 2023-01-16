@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react'; import { motion, AnimatePresence } from "framer-motion";
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'

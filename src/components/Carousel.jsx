@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Foza from "../assets/images/foza.png";
@@ -48,15 +49,15 @@ function Carousel() {
     },
   ];
   return (
-    <div className="bg-black pb-2 sm:pb-0">
+    <motion.div className="bg-black pb-2 sm:pb-0">
       <Splide options={options} hasTrack={false} aria-label="...">
         <SplideTrack>
           {slides.map((slide) => (
             <SplideSlide className="bg-black text-white h-fit">
               {/* desktop carousel */}
               <section className="hidden md:flex ">
-                <div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
-                  <div>
+                <motion.div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
+                  <motion.div>
                     <h1 className="md:text-4xl lg:text-5xl my-4 font-semibold">
                       Recognizing:
                     </h1>
@@ -64,20 +65,20 @@ function Carousel() {
                       {slide.name}
                     </h3>
                     <p className="text-gray-300">{slide.position}</p>
-                  </div>
-                  <div className="mb-16">
+                  </motion.div>
+                  <motion.div className="mb-16">
                     <p className="text-gray-300 my-2 text-lg lg:text-xl">
                       {slide.quote}
                     </p>
-                  </div>
-                </div>
-                <div className="w-full">
+                  </motion.div>
+                </motion.div>
+                <motion.div className="w-full">
                   <img
                     className="w-full md:max-w-xl md:ml-auto"
                     src={slide.image}
                     alt=""
                   />
-                </div>
+                </motion.div>
               </section>
               {/* mobile carousel */}
               <section className="md:hidden px-12 sm:px-16">
@@ -96,21 +97,21 @@ function Carousel() {
         </SplideTrack>
 
         {/* progress bar */}
-        <div className="splide__progress mt-2 mb-20 md:mb-0">
-          <div className="splide__progress__bar bg-blue-600" />
-        </div>
+        <motion.div className="splide__progress mt-2 mb-20 md:mb-0">
+          <motion.div className="splide__progress__bar bg-blue-600" />
+        </motion.div>
 
         {/* controls */}
-        <div class="splide__arrows relative -top-12 md:-top-28 flex w-44 px-12 sm:ml-6 lg:ml-12 space-x-4 my-2">
+        <motion.div class="splide__arrows relative -top-12 md:-top-28 flex w-44 px-12 sm:ml-6 lg:ml-12 space-x-4 my-2">
           <button class="splide__arrow splide__arrow--prev bg-transparent mx-6 my-5 p-4 w-auto h-auto">
             <img src={ArrowLeft} alt="" />
           </button>
           <button class="splide__arrow splide__arrow--next bg-transparent mx-6 my-5 p-4 w-auto h-auto">
             <img src={ArrowRight} alt="" />
           </button>
-        </div>
+        </motion.div>
       </Splide>
-    </div>
+    </motion.div>
   );
 }
 

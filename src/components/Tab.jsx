@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
+import { motion } from "framer-motion";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -96,12 +97,12 @@ export default function HorizontalTab() {
       },
     ],
   });
-  console.log(plans);
+
   return (
-    <div className="mx-auto w-full py-8 bg-blue-50">
+    <motion.div className="mx-auto w-full py-8 bg-blue-50">
       <h1 className="bg-white text-center text-3xl text-gray-700 font-semibold pt-16">Choose one that fits</h1>
       <Tab.Group>
-        <div className="bg-white w-full py-4 pb-16">
+        <motion.div className="bg-white w-full py-4 pb-16">
         <Tab.List className="flex w-10/12 space-x-1 rounded-xl bg-blue-50 border border-blue-100 p-1 max-w-xs sm:max-w-md mx-auto">
           
             <Tab
@@ -132,7 +133,7 @@ export default function HorizontalTab() {
               <span className="text-[10px] bg-gray-200 text-gray-700 rounded-full ml-1 px-2 py-1">Save 12%</span>
             </Tab>
         </Tab.List>
-        </div>
+        </motion.div>
         <Tab.Panels className="mt-2 mx-auto">
           {Object.values(plans).map((billing, idx) => (
             <Tab.Panel
@@ -144,20 +145,20 @@ export default function HorizontalTab() {
             >
               <section className="grid gap-6 md:gap-8 md:grid-cols-2">
                 {billing.map((bill) => (
-                  <div
+                  <motion.div
                     key={billing.id}
                     className="relative rounded-md bg-white h-auto shadow flex flex-col"
                   >
-                    <div className="flex justify-between items-center px-4 py-6 border-b gap-1">
-                      <div>
+                    <motion.div className="flex justify-between items-center px-4 py-6 border-b gap-1">
+                      <motion.div>
                         <h3 className="text-lg font-bold text-gray-900">
                           {bill.type}
                         </h3>
                         <p className="text-sm text-gray-500">
                           {bill.billing}
                         </p>
-                      </div>
-                      <div className="flex justify-end flex-wrap items-start">
+                      </motion.div>
+                      <motion.div className="flex justify-end flex-wrap items-start">
                         {bill.price && 
                           <span className="text-2xl font-extrabold mx-1">N</span>
                         }
@@ -167,16 +168,16 @@ export default function HorizontalTab() {
                         {bill.price &&
                           <span className="self-end text-gray-600 mb-1.5 mx-1">per month</span>
                         }
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                     <h4 className="text-sm font-bold text-gray-700 px-4 pt-3 pb-2">FEATURES</h4>
                     {!bill.price &&
                       <p className="text-sm text-gray-500 px-4 pb-3">Some of the sweetness in <span className="font-semibold">Standard</span> plus... </p>
                     }
-                    <div className=" px-4 h-full">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 lg:gap-2 space-y-3 lg:space-y-2"> 
+                    <motion.div className=" px-4 h-full">
+                      <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 lg:gap-2 space-y-3 lg:space-y-2"> 
                       {bill.features.map((feature) => (
-                        <div
+                        <motion.div
                           key={feature}
                           className="flex items-center space-x-2"
                         >
@@ -199,17 +200,17 @@ export default function HorizontalTab() {
                           <p className="text-wrap w-fit h-fit text-sm font-normal leading-5 text-gray-500">
                             {feature}
                           </p>
-                        </div>
+                        </motion.div>
                       ))}
-                      </div>
-                    </div>
-                    <div className="p-4 space-y-2 border-t border-t-gray-200 mt-4 flex flex-col justify-end mb-0">
+                      </motion.div>
+                    </motion.div>
+                    <motion.div className="p-4 space-y-2 border-t border-t-gray-200 mt-4 flex flex-col justify-end mb-0">
                       {bill.subCta &&
                         <a href={""} className="flex justify-center border hover:bg-gray-50 transition-all border-gray-200 rounded p-2.5 text-sm">{bill.subCta}</a>
                       }
                       <a href={""} className="flex justify-center bg-blue-500 hover:bg-blue-700 transition-all rounded p-3 text-white text-sm">{bill.cta}</a>
-                    </div>            
-                  </div>
+                    </motion.div>            
+                  </motion.div>
                 ))}
               </section>
 
@@ -217,6 +218,6 @@ export default function HorizontalTab() {
           ))}
         </Tab.Panels>
       </Tab.Group>
-    </div>
+    </motion.div>
   );
 }
