@@ -11,27 +11,27 @@ function Footer() {
         </motion.section>
         <motion.section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-x-10 sm:gap-x-0 gap-y-4 py-12">
             <motion.div className="space-y-4 flex flex-col ">
-                <NavLink to="/" className="nav text-gray-400 mt-7  text-sm">Product</NavLink>
-                <NavLink to="/" className="nav text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></NavLink>
+                <NavLink to="/" className="text-gray-400 mt-7  text-sm">Product</NavLink>
+                <NavLink to="/gifting" className="nav text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></NavLink>
                 <NavLink to="/humark" className="nav text-gray-200">Solutions</NavLink>
                 <NavLink to="/pricing" className="nav text-gray-200">Pricing</NavLink>
             </motion.div>
             <motion.div className="space-y-4 flex flex-col ">
-                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Company</NavLink>
+                <span className="nav text-gray-400 mt-7 text-sm">Company</span>
                 <NavLink to="/about" className="nav text-gray-200">About us</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Press</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Contact</NavLink>
+                <NavLink to="/press" className="nav text-gray-200">Press</NavLink>
+                <NavLink to="/contact" className="nav text-gray-200">Contact</NavLink>
             </motion.div>
             <motion.div className="nav space-y-4 flex flex-col ">
-                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Social</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Twitter</NavLink>
-                <NavLink to="/" className="nav text-gray-200">LinkedIn</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Facebook</NavLink>
+                <span className="nav text-gray-400 mt-7 text-sm">Social</span>
+                <NavLink to="/twitter" className="nav text-gray-200">Twitter</NavLink>
+                <NavLink to="/linkedin" className="nav text-gray-200">LinkedIn</NavLink>
+                <NavLink to="/facebook" className="nav text-gray-200">Facebook</NavLink>
             </motion.div>
             <motion.div className="nav space-y-4 flex flex-col ">
-                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Legal</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Terms</NavLink>
-                <NavLink to="/" className="nav text-gray-200">Privacy</NavLink>
+                <span className="nav text-gray-400 mt-7 text-sm">Legal</span>
+                <NavLink to="/terms" className="nav text-gray-200">Terms</NavLink>
+                <NavLink to="/privacy" className="nav text-gray-200">Privacy</NavLink>
             </motion.div>
         </motion.section>
         <motion.section className="nav md:flex md:justify-between md:items-center mt-6 md:mt-8">
