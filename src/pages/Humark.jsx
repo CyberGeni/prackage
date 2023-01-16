@@ -11,13 +11,14 @@ function Humark() {
     <motion.div
       className="font-BrOmega scroll-smooth"
       initial={{ opacity: 0.3 }}
+      whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0.3 }}
       transition={{ duration: 0.3 }}
     >
       <Navbar />
-      <main className="pt-12 scroll-smooth">
-        <section className="px-12 py-16 sm:px-16 md:px-24">
+      <motion.main className="pt-12 scroll-smooth">
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24">
           <motion.div className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs sm:my-3 w-fit">
             Humark
           </motion.div>
@@ -44,8 +45,8 @@ function Humark() {
               alt=""
             />
           </motion.div>
-        </section>
-        <section
+        </motion.section>
+        <motion.section
           id="diveIn"
           className="grid sm:grid-cols-2 gap-5 sm:gap-8 md:gap-20 py-16 sm:px-16 md:px-24"
         >
@@ -71,8 +72,8 @@ function Humark() {
               the talk-of-town.
             </p>
           </motion.div>
-        </section>
-        <section className="bg-blue-600 mt-8 py-16">
+        </motion.section>
+        <motion.section className="bg-blue-600 mt-8 py-16">
           <h1 className="text-white text-center text-3xl sm:text-4xl font-semibold max-w-3xl mx-auto px-12">
             We are building and managing well-rounded humans with the past,
             present and the future in mind.
@@ -85,8 +86,8 @@ function Humark() {
               Jumpstart your brand
             </button>
           </motion.div>
-        </section>
-      </main>
+        </motion.section>
+      </motion.main>
       <Footer />
     </motion.div>
   );

@@ -55,7 +55,7 @@ function Carousel() {
           {slides.map((slide) => (
             <SplideSlide className="bg-black text-white h-fit">
               {/* desktop carousel */}
-              <section className="hidden md:flex ">
+              <motion.section className="hidden md:flex ">
                 <motion.div className="sm:px-16 lg:px-24 sm:py-10 md:py-16 sm:flex sm:flex-col sm:justify-between sm:place-content-between">
                   <motion.div>
                     <h1 className="md:text-4xl lg:text-5xl my-4 font-semibold">
@@ -79,9 +79,9 @@ function Carousel() {
                     alt=""
                   />
                 </motion.div>
-              </section>
+              </motion.section>
               {/* mobile carousel */}
-              <section className="md:hidden px-12 sm:px-16">
+              <motion.section className="md:hidden px-12 sm:px-16">
                 <h1 className="text-3xl mt-10 my-6 font-semibold">
                   Recognizing:
                 </h1>
@@ -91,7 +91,7 @@ function Carousel() {
                 </h3>
                 <p className="text-gray-300 text-xl">{slide.position}</p>
                 <p className="text-gray-300 my-2 text-lg">{slide.quote}</p>
-              </section>
+              </motion.section>
             </SplideSlide>
           ))}
         </SplideTrack>

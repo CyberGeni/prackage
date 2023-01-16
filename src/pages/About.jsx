@@ -7,30 +7,32 @@ import Whatsapp from "../assets/icons/whatsapp.svg";
 import Email from "../assets/icons/email.svg";
 import "../App.css";
 import Carousel from "../components/Carousel";
+import AOS from "aos";
 
 function About() {
+  AOS.init();
   return (
-    <motion.div
-      className="font-BrOmega"
-      initial={{ opacity: 0.3 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0.3 }}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.div className="font-BrOmega scroll-smooth">
       <Navbar />
-      <main className="pt-12">
-        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-16">
+      <motion.main
+        initial={{ opacity: 0.3 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0.3 }}
+        transition={{ duration: 0.3 }}
+        className="pt-12"
+      >
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24 md:py-16">
           <motion.div className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs sm:my-2 w-fit flex">
             About us
           </motion.div>
           <motion.div className="grid md:grid-cols-3 gap-x-2 sm:gap-x-4 md:gap-x-8">
-            <motion.div className="col-span-2">
+            <motion.div data-aos="fade-up" className="col-span-2">
               <h1 className="text-gray-900 text-3xl md:text-4xl lg:text-5xl font-semibold my-4 md:my-0 sm:leading-relaxed personal-branding">
                 We exist to create an easier, better and fulfilling life for you
                 through personal branding.
               </h1>
             </motion.div>
-            <p className="text-gray-500 col-span-1">
+            <p data-aos="fade-up" className="text-gray-500 col-span-1">
               Prackage is a truly personal{" "}
               <span className="italic">personal</span> branding company. This
               means that it’s in our DNA to care about your overall growth as
@@ -38,15 +40,15 @@ function About() {
               and if it makes your life easier, we’ll do it.
             </p>
           </motion.div>
-        </section>
-        <img src={PeopleTouchingHands} alt="" />
+        </motion.section>
+        <img data-aos="fade-up" src={PeopleTouchingHands} alt="" />
 
         {/* our story */}
-        <section className="px-12 py-16 sm:px-16 md:px-24 md:py-10 my-4 grid md:grid-cols-2 gap-x-12 lg:gap-x-20">
-          <h4 className="text-xl md:text-2xl my-3 font-semibold md:col-span-2">
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24 md:py-10 my-4 grid md:grid-cols-2 gap-x-12 lg:gap-x-20">
+          <h4 data-aos="fade-up" className="text-xl md:text-2xl my-3 font-semibold md:col-span-2">
             Our story
           </h4>
-          <motion.div>
+          <motion.div data-aos="fade-up">
             <p className="text-gray-500">
               In under a year, Prackage has evolved to mean a lot of things to
               different people. But the one thing we’ve retained throughout our
@@ -58,7 +60,7 @@ function About() {
               proofs are there to see.
             </blockquote>
           </motion.div>
-          <motion.div className="text-gray-500 space-y-3">
+          <motion.div data-aos="fade-up" className="text-gray-500 space-y-3">
             <p>
               We’ve been able to do this through different approaches.
               Sometimes, it’s through the big things, like: Getting our member a
@@ -76,13 +78,13 @@ function About() {
               losing your essence.
             </p>
           </motion.div>
-        </section>
+        </motion.section>
 
         {/* carousel goes here */}
-        <Carousel />
+        <Carousel data-aos="fade-up" />
 
         {/* contact */}
-        <section className="px-10 py-6 sm:px-14 md:px-16 lg:px-24 md:py-10 my-2">
+        <motion.section data-aos="fade-up" className="px-10 py-6 sm:px-14 md:px-16 lg:px-24 md:py-10 my-2">
           <h2 className="text-gray-900 text-xl md-text-2xl font-semibold my-2">
             Contact us
           </h2>
@@ -106,8 +108,8 @@ function About() {
               />
             </a>
           </motion.div>
-        </section>
-      </main>
+        </motion.section>
+      </motion.main>
       <Footer />
     </motion.div>
   );

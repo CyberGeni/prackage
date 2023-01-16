@@ -1,5 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -17,18 +19,18 @@ import SectionThreeImg from "../assets/images/your-dream-its-valid.png";
 import SectionFourImg from "../assets/images/your-brand-your-rules.png";
 import "../App.css";
 function Home() {
+  AOS.init();
   return (
-    <motion.div
-      className="font-BrOmega"
-      initial={{ opacity: 0.3 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0.3 }}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.div className="font-BrOmega scroll-smooth">
       <Navbar />
-      <main>
+      <motion.main
+        initial={{ opacity: 0.3 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0.3 }}
+        transition={{ duration: 0.3 }}
+      >
         {/* hero */}
-        <section className="h-screen flex flex-col px-[10%] mx-auto justify-center items-center space-y-5 sm:space-y-6 md:space-y-7">
+        <motion.section className="h-screen flex flex-col px-[10%] mx-auto justify-center items-center space-y-5 sm:space-y-6 md:space-y-7">
           <h1 className="text-5xl mt-16 sm:text-6xl md:text-7xl md:max-w-2xl mx-auto text-center font-bold">
             Get the recognition you{" "}
             <span className="decoration-underline underline underline-offset-4 decoration-blue-500">
@@ -43,11 +45,14 @@ function Home() {
           <button className="bg-blue-500 text-white rounded px-6 py-3 hover:bg-blue-600 transition-all ">
             Get started
           </button>
-        </section>
+        </motion.section>
         {/* media worked with */}
-        <section className="bg-gray-50 text-center px-12 py-10">
+        <motion.section className="bg-gray-50 text-center px-12 py-10">
           <p className="text-gray-500 pb-6">Our members have appeared on</p>
-          <motion.div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 place-items-center">
+          <motion.div
+            data-aos="fade-up"
+            className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 place-items-center"
+          >
             <img className="max-w-full" src={TheGuardian} alt="" />
             <img className="max-w-full" src={Techpoint} alt="" />
             <img className="max-w-full" src={TVC} alt="" />
@@ -55,11 +60,16 @@ function Home() {
             <img className="max-w-full" src={mtvbase} alt="" />
             <img className="max-w-full" src={Pulse} alt="" />
           </motion.div>
-        </section>
+        </motion.section>
         {/* Show off, only when you want */}
-        <section className="bg-blue-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
-          <img className="mx-auto md:w-full" src={SectionOneImg} alt="" />
-          <motion.div className="order-first md:space-y-6">
+        <motion.section className="bg-blue-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
+          <img
+            data-aos="fade-up"
+            className="mx-auto md:w-full"
+            src={SectionOneImg}
+            alt=""
+          />
+          <motion.div data-aos="fade-up" className="order-first md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">
               Show off, only when you want
             </h1>
@@ -76,20 +86,22 @@ function Home() {
               Learn about Humark
             </Link>
           </motion.div>
-        </section>
+        </motion.section>
         {/* heavy on the personal */}
-        <section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
           <img
+            data-aos="fade-up"
             className="rounded-md mx-auto md:w-full sm:hidden"
             src={SectionTwoImg}
             alt=""
           />
           <img
+            data-aos="fade-up"
             className="hidden sm:block rounded-md mx-auto md:w-full"
             src={SectionTwoImgV2}
             alt=""
           />
-          <motion.div className="md:space-y-6">
+          <motion.div data-aos="fade-up" className="md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4">
               Heavy on the “personal”
             </h1>
@@ -102,16 +114,17 @@ function Home() {
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
             </button>
           </motion.div>
-        </section>
+        </motion.section>
 
         {/* your dream, it's valid */}
-        <section className="bg-orange-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
+        <motion.section className="bg-orange-50 px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
           <img
+            data-aos="fade-up"
             className="rounded-md mx-auto md:w-full"
             src={SectionThreeImg}
             alt=""
           />
-          <motion.div className="order-first md:space-y-6">
+          <motion.div data-aos="fade-up" className="order-first md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4">
               Your dream, it's valid
             </h1>
@@ -125,16 +138,17 @@ function Home() {
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
             </button>
           </motion.div>
-        </section>
+        </motion.section>
 
         {/* your brand, your rules */}
-        <section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24 md:grid md:grid-cols-2 md:gap-12 lg:gap-24 md:items-center">
           <img
+            data-aos="fade-up"
             className="rounded-md mx-auto md:w-full"
             src={SectionFourImg}
             alt=""
           />
-          <motion.div className="md:space-y-6">
+          <motion.div data-aos="fade-up" className="md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4">
               Your brand, your rules.
             </h1>
@@ -146,8 +160,8 @@ function Home() {
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
             </button>
           </motion.div>
-        </section>
-      </main>
+        </motion.section>
+      </motion.main>
       <Footer />
     </motion.div>
   );
