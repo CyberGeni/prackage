@@ -1,5 +1,5 @@
 import React from 'react'; import { motion, AnimatePresence } from "framer-motion";
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import AOS from 'aos';
 function Footer() {
     AOS.init();
@@ -11,30 +11,30 @@ function Footer() {
         </motion.section>
         <motion.section className="border-y border-gray-600 grid grid-cols-2 sm:grid-cols-4 gap-x-10 sm:gap-x-0 gap-y-4 py-12">
             <motion.div className="space-y-4 flex flex-col ">
-                <Link to="/" className="text-gray-400 mt-7  text-sm">Product</Link>
-                <Link to="/" className="text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></Link>
-                <Link to="/humark" className="text-gray-200">Solutions</Link>
-                <Link to="/pricing" className="text-gray-200">Pricing</Link>
+                <NavLink to="/" className="nav text-gray-400 mt-7  text-sm">Product</NavLink>
+                <NavLink to="/" className="nav text-gray-200 flex flex-wrap">Gifting <span className="bg-slate-700 text-xs sm:text-[9px] lg:text-xs rounded-full px-2 py-1 ml-1">Coming Soon</span></NavLink>
+                <NavLink to="/humark" className="nav text-gray-200">Solutions</NavLink>
+                <NavLink to="/pricing" className="nav text-gray-200">Pricing</NavLink>
             </motion.div>
             <motion.div className="space-y-4 flex flex-col ">
-                <Link to="/" className="text-gray-400 mt-7 text-sm">Company</Link>
-                <Link to="/about" className="text-gray-200">About us</Link>
-                <Link to="/" className="text-gray-200">Press</Link>
-                <Link to="/" className="text-gray-200">Contact</Link>
+                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Company</NavLink>
+                <NavLink to="/about" className="nav text-gray-200">About us</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Press</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Contact</NavLink>
             </motion.div>
-            <motion.div className="space-y-4 flex flex-col ">
-                <Link to="/" className="text-gray-400 mt-7 text-sm">Social</Link>
-                <Link to="/" className="text-gray-200">Twitter</Link>
-                <Link to="/" className="text-gray-200">LinkedIn</Link>
-                <Link to="/" className="text-gray-200">Facebook</Link>
+            <motion.div className="nav space-y-4 flex flex-col ">
+                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Social</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Twitter</NavLink>
+                <NavLink to="/" className="nav text-gray-200">LinkedIn</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Facebook</NavLink>
             </motion.div>
-            <motion.div className="space-y-4 flex flex-col ">
-                <Link to="/" className="text-gray-400 mt-7 text-sm">Legal</Link>
-                <Link to="/" className="text-gray-200">Terms</Link>
-                <Link to="/" className="text-gray-200">Privacy</Link>
+            <motion.div className="nav space-y-4 flex flex-col ">
+                <NavLink to="/" className="nav text-gray-400 mt-7 text-sm">Legal</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Terms</NavLink>
+                <NavLink to="/" className="nav text-gray-200">Privacy</NavLink>
             </motion.div>
         </motion.section>
-        <motion.section className="md:flex md:justify-between md:items-center mt-6 md:mt-8">
+        <motion.section className="nav md:flex md:justify-between md:items-center mt-6 md:mt-8">
             <h1 className="text-white text-4xl font-bold">prackage</h1>
             <p className="text-gray-400 text-sm my-4">&copy; 2023 Digital Prackage Limited. All rights reserved.</p>
         </motion.section>

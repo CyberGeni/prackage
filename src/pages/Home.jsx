@@ -2,7 +2,6 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Arrow from "../assets/icons/right-arrow.svg";
@@ -18,11 +17,11 @@ import SectionTwoImgV2 from "../assets/images/heavy-on-the-personal-2.png";
 import SectionThreeImg from "../assets/images/your-dream-its-valid.png";
 import SectionFourImg from "../assets/images/your-brand-your-rules.png";
 import "../App.css";
+
 function Home() {
   AOS.init();
   return (
     <motion.div className="font-BrOmega scroll-smooth">
-      <Navbar />
       <motion.main
         initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
@@ -162,6 +161,7 @@ function Home() {
           </motion.div>
         </motion.section>
       </motion.main>
+      
       <Footer />
     </motion.div>
   );
