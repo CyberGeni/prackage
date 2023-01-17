@@ -27,7 +27,7 @@ function App() {
                 <Route
                   path="*"
                   element={
-                    <motion.div className="flex items-center justify-center h-screen text-6xl font-semibold font-BrOmega bg-gray-800 text-gray-200">
+                    <motion.div className="flex items-center justify-center h-screen text-6xl font-semibold font-BrOmega bg-white text-blue-500">
                       404
                     </motion.div>
                   }
