@@ -28,7 +28,7 @@ function App() {
                   path="*"
                   element={
                     <motion.div className="flex items-center justify-center h-screen text-6xl font-semibold font-BrOmega bg-white text-blue-500">
-                      404
+                      404, the page you're looking for was never here.
                     </motion.div>
                   }
                 />
