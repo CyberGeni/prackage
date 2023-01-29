@@ -70,19 +70,15 @@ function Home() {
           />
           <motion.div data-aos="fade-up" className="order-first md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4 md:my-0">
-              Show off, only when you want
+            Know what to do to get where you want
             </h1>
             <p className="text-gray-500 text-lg my-3 mb-2">
-              Don't fall into the trap of "putting yourself out there just for
-              the sake of it. Out proprietary tool Humark helps you stand out
-              and stay relevant without losing your essence - what makes you,
-              you."
+            Don’t fall into the trap of “putting yourself out there” just for the sake of it. Our proprietary tool Humark® helps you stand out and stay relevant without losing your essence — what makes you, you. It’s data-driven, no BS.
             </p>
             <Link
               to="/humark"
-              className="bg-blue-500 text-white rounded px-6 py-3 block w-fit hover:bg-blue-600 transition-all "
-            >
-              Learn about Humark
+              className="w-fit bg-blue-500 text-white rounded px-6 py-3 mt-6 flex items-center hover:bg-blue-600 transition-all">
+              Learn about Humark <img className="ml-2 w-3" src={Arrow} alt="" />
             </Link>
           </motion.div>
         </motion.section>
@@ -105,9 +101,7 @@ function Home() {
               Heavy on the “personal”
             </h1>
             <p className="text-gray-500 text-lg">
-              Personal branding is more than mere self-promotion. Prackage helps
-              you grow, establish your worth in the right settings and make
-              introductions that open up new opportunities for you.
+            Personal branding is more than mere self-promotion. Prackage helps you grow, establish your worth in the right settings and make introductions that open up new opportunities for you.
             </p>
             <button className="bg-blue-500 text-white rounded px-6 py-3 mt-6 flex items-center hover:bg-blue-600 transition-all">
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
@@ -125,13 +119,10 @@ function Home() {
           />
           <motion.div data-aos="fade-up" className="order-first md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4">
-              Your dream, it's valid
+            Made for everyone. Almost everyone.
             </h1>
             <p className="text-gray-500 text-lg">
-              Get the headstart to build the fulfilling life you deserve.
-              Monetise your skills, identify new income streams, launch your
-              business, multiply your network, get things done and more. If you
-              can dream it, we can help you achieve it.
+            With our proprietary tool Humark®, we are able to build and manage your personal brand to your taste, whether you love the spotlight or you prefer to remain behind the scene.
             </p>
             <button className="bg-blue-500 text-white rounded px-6 py-3 mt-4 flex items-center hover:bg-blue-600 transition-all">
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
@@ -149,11 +140,10 @@ function Home() {
           />
           <motion.div data-aos="fade-up" className="md:space-y-6">
             <h1 className="font-bold text-3xl lg:text-4xl my-4">
-              Your brand, your rules.
+            Improve your social presence in interesting ways.
             </h1>
             <p className="text-gray-500 text-lg">
-              Our plans are tailored to your specific personality and needs;
-              simply show us what you want and we'll take it from there.
+            From special events like birthdays to work promotion, Prackage finds refreshing and enjoyable ways to keep you present and visible so that you remain top-of-mind to those who matter.
             </p>
             <button className="bg-blue-500 text-white rounded px-6 py-3 mt-6 flex items-center hover:bg-blue-600 transition-all">
               Get started <img className="ml-2 w-3" src={Arrow} alt="" />
