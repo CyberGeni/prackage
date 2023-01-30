@@ -42,13 +42,13 @@ function Humark() {
             />
           </motion.div>
         </motion.section>
-        <motion.section className="grid sm:grid-cols-2 py-16 sm:px-16 md:px-24">
+        <motion.section className="grid sm:grid-cols-2 px-12 py-16 sm:px-16 md:px-24">
           <motion.div>
-            <motion.h1 className=" text-gray-900 text-3xl md:text-5xl font-semibold">
+            <motion.h1 className=" text-gray-900 mb-6 sm:mb-0 text-3xl md:text-5xl font-semibold">
               How Humark works <br /> -in a nutshell
             </motion.h1>
           </motion.div>
-          <motion.div className="border-l-2 border-gray-100 pl-12 space-y-10 snap snap-y snap-mandatory overflow-y-scroll h-96 w-full scrollbar-hide">
+          <motion.div className="sm:border-l-2 border-gray-100 sm:pl-12 space-y-10 snap snap-y snap-mandatory overflow-y-scroll sm:h-96 w-full">
             <motion.div className="snap-start scroll-my-3 h-fit">
               <span className="text-[#2F80ED] font-medium text-sm">STEP 1</span>
               <img className="my-2" src={Step1} alt="" />
