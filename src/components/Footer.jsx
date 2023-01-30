@@ -4,7 +4,7 @@ import AOS from 'aos';
 function Footer() {
     AOS.init();
   return (
-    <footer data-aos="fade-up" className="bg-black px-12 py-12 sm:px-16 md:px-24 md:py-16">
+    <footer className="bg-black px-12 py-12 sm:px-16 md:px-24 md:py-16">
         <motion.section className="pb-12">
             <p className="text-gray-200 text-lg w-1/2">Build your prackaged life now.</p>
             <button className="bg-blue-600 text-white rounded px-6 py-3 mt-4 hover:bg-blue-700 transition-all">View plans</button>

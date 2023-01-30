@@ -13,3 +13,7 @@ h1.personal-branding {
 a.nav.active {
     color: rgb(59 130 246);
 }
+.snap::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

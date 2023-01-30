@@ -10,5 +10,8 @@ module.exports = {
         BrOmega: ["BrOmega", "sans-serif"],
       },
     },
-  plugins: [],
+    plugins: [
+      require('tailwind-scrollbar-hide')
+      // ...
+    ],
 }}

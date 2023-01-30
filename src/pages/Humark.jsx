@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import People from "../assets/images/people-working.png";
-import Personality from "../assets/icons/personality.svg";
-import SocialScience from "../assets/icons/social-science.svg";
+import Step1 from "../assets/images/humark-step-1.png";
+import Step2 from "../assets/images/humark-step-2.png";
+import Step3 from "../assets/images/humark-step-3.png";
 import "../App.css";
 function Humark() {
   return (
@@ -33,11 +34,6 @@ function Humark() {
                 brand. It enables our team to manage you with outstanding
                 dedication and commitment.
               </p>
-              <a href="#diveIn" className="scroll-smooth">
-                <button className="bg-blue-600 text-white rounded px-6 py-3">
-                  Dive in
-                </button>
-              </a>
             </motion.div>
             <img
               className="hidden md:block w-full max-w-md mx-auto"
@@ -46,34 +42,39 @@ function Humark() {
             />
           </motion.div>
         </motion.section>
-        <motion.section
-          id="diveIn"
-          className="grid sm:grid-cols-2 gap-5 sm:gap-8 md:gap-20 py-16 sm:px-16 md:px-24"
-        >
-          <motion.div className="bg-green-50 px-10 py-10 rounded-lg">
-            <img className="my-4" src={SocialScience} alt="" />
-            <h2 className="text-black text-2xl font-semibold my-2">
-              Technology meets social science
-            </h2>
-            <p className="text-gray-500">
-              Our proprietary personal branding tool Humark® enables us to build
-              and manage your brand in the most empirical and goal-based ways
-              possible
-            </p>
+        <motion.section className="grid sm:grid-cols-2 py-16 sm:px-16 md:px-24">
+          <motion.div>
+            <motion.h1 className=" text-gray-900 text-3xl md:text-5xl font-semibold">
+              How Humark works <br /> -in a nutshell
+            </motion.h1>
           </motion.div>
-          <motion.div className="bg-violet-50 px-10 py-10 rounded-lg">
-            <img className="my-4" src={Personality} alt="" />
-            <h2 className="text-black text-2xl font-semibold my-2">
-              Perfect for all personality types
-            </h2>
-            <p className="text-gray-500">
-              With Humark we can deliver presence, relevance and growth for you
-              without compromising your desire to be behind the scene or to be
-              the talk-of-town.
-            </p>
+          <motion.div className="border-l-2 border-gray-100 pl-12 space-y-10 snap snap-y snap-mandatory overflow-y-scroll h-96 w-full scrollbar-hide">
+            <motion.div className="snap-start scroll-my-3 h-fit">
+              <span className="text-[#2F80ED] font-medium text-sm">STEP 1</span>
+              <img className="my-2" src={Step1} alt="" />
+              <h3 className="text-xl font-medium my-3 text-gray-700">Easy start</h3>
+              <p className="my-2 text-gray-600">
+                Find the perfect starting point for your personal branding
+                journey. Sign up with just your name and Instagram handle to
+                start building your brand from scratch or take it to the next
+                level, if you’ve already built one for yourself.
+              </p>
+            </motion.div>
+            <motion.div className="snap-start scroll-my-3 h-fit">
+              <span className="text-[#2F80ED] font-medium text-sm">STEP 2</span>
+              <img className="my-2" src={Step2} alt="" />
+              <h3 className="text-xl font-medium my-3 text-gray-700">Get a direction</h3>
+              <p  className="my-2 text-gray-600">For starters, Humark by Prackage shows you what to do to achieve the personal brand level you desire. For rising and established names, it helps you remain the one everyone loves talking about. It’s all based on simple and measurable actions we’re taking on your behalf.</p>
+            </motion.div>
+            <motion.div className="snap-start pb-6 h-fit">
+              <span className="text-[#2F80ED] font-medium text-sm">STEP 3</span>
+              <img className="my-2" src={Step3} alt="" />
+              <h3 className="text-xl font-medium my-3 text-gray-700">Choose your membership plan</h3>
+              <p className="my-2 text-gray-600">Start winning the hearts of your stakeholders by creating a private and public image they love to see with our standard membership plan or our flexible jumpstart plan.</p>
+            </motion.div>
           </motion.div>
         </motion.section>
-        <motion.section className="bg-blue-600 mt-8 py-16">
+        <motion.section className="bg-black mt-8 py-16">
           <h1 className="text-white text-center text-3xl sm:text-4xl font-semibold max-w-3xl mx-auto px-12">
             We are building and managing well-rounded humans with the past,
             present and the future in mind.
