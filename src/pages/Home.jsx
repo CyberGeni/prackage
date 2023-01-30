@@ -150,6 +150,17 @@ function Home() {
             </button>
           </motion.div>
         </motion.section>
+
+        {/* inclusive and flexible pricing */}
+        <motion.section className="bg-[#FFFAEB] h-[70vh] flex items-center justify-center flex-col">
+          <h1 className="font-bold text-3xl lg:text-4xl my-4">Inclusive and flexible pricing.</h1>
+          <p className="text-gray-500 text-lg w-5/6 max-w-3xl mx-auto text-center">Grow your personal brand bit by bit or jumpstart it: Lay the foundation with our affordable <span>Subscription Plan</span>; go all out with our <span>Membership Plan</span>; and enjoy the juicy perks of being a member of our <span>Exclusive Club.</span></p>
+          <Link
+              to="/pricing"
+              className="w-fit bg-blue-500 text-white rounded px-6 py-3 mt-6 flex items-center hover:bg-blue-600 transition-all">
+              View pricing plans <img className="ml-2 w-3" src={Arrow} alt="" />
+            </Link>
+        </motion.section>
       </motion.main>
       
       <Footer />
