@@ -74,7 +74,38 @@ function Humark() {
             </motion.div>
           </motion.div>
         </motion.section>
-        <motion.section className="bg-black mt-8 py-16">
+
+        {/* benefits of humark */}
+        <motion.section className="px-12 py-16 sm:px-16 md:px-24 bg-black">
+        <h1 className="text-white text-3xl sm:text-4xl font-semibold my-8">Benefits of Humark</h1>
+        <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-20">
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+          <motion.div>
+            <h3 className="text-white text-xl my-2">Get access to our member directory</h3>
+            <p className="text-gray-500">By signing up on prackage and using Humark, you get exclusive access to our directory of members. This allows you to expand your network.</p>
+          </motion.div>
+        </motion.div>
+        </motion.section>
+        <motion.section className="bg-black py-16">
           <h1 className="text-white text-center text-3xl sm:text-4xl font-semibold max-w-3xl mx-auto px-12">
             We are building and managing well-rounded humans with the past,
             present and the future in mind.
